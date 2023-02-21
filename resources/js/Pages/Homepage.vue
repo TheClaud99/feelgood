@@ -14,7 +14,7 @@ import { Head } from "@inertiajs/vue3";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ArrowUp from "@/Components/ArrowUp.vue";
 
-defineProps({ members: Array, products: Array });
+defineProps({ members: Array, products: Array, events: Array });
 </script>
 
 <template>
@@ -30,7 +30,7 @@ defineProps({ members: Array, products: Array });
         <AboutUs />
         <Mercatino :products="products" />
         <AltriServizi />
-        <Eventi />
+        <Eventi :events="events" />
         <Contatti />
 
         <ArrowUp />
