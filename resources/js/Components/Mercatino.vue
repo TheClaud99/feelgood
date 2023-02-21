@@ -1,5 +1,5 @@
 <script setup>
-import MultipleItemCarousel from "@/Components/MultipleItemCarousel.vue";
+// import MultipleItemCarousel from "@/Components/MultipleItemCarousel.vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 

@@ -1,11 +1,4 @@
 <script setup>
-import jack1 from "@/../images/jack1.png";
-import jack2 from "@/../images/jack2.png";
-import scuola from "@/../images/icons_rounded/scuola.png";
-import sale from "@/../images/icons_rounded/sale.png";
-import musicaInsieme from "@/../images/icons_rounded/musica_insieme.png";
-import altro from "@/../images/icons_rounded/altro.png";
-
 defineProps({
     members: {
         type: Array,
