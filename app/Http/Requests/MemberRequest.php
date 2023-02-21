@@ -11,7 +11,7 @@ class MemberRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         // only allow updates if the user is logged in
         return backpack_auth()->check();
@@ -20,9 +20,9 @@ class MemberRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array
+     * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
-    public function rules()
+    public function rules(): array
     {
         return [
             'name' => 'required|max:255',
@@ -31,11 +31,11 @@ class MemberRequest extends FormRequest
     }
 
     /**
-     * Get the validation attributes that apply to the request.
+     * Get custom attributes for validator errors.
      *
-     * @return array
+     * @return array<string, string>
      */
-    public function attributes()
+    public function attributes(): array
     {
         return [
             //
@@ -43,11 +43,11 @@ class MemberRequest extends FormRequest
     }
 
     /**
-     * Get the validation messages that apply to the request.
+     * Get the error messages for the defined validation rules.
      *
-     * @return array
+     * @return array<string, string>
      */
-    public function messages()
+    public function messages(): array
     {
         return [
             //
