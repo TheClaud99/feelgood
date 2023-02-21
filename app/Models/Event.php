@@ -61,6 +61,7 @@ class Event extends Model
     protected $casts = [
         'sequence' => 'integer',
         'date' => 'datetime',
+        'active' => 'boolean'
     ];
 
     /*

@@ -60,6 +60,7 @@ class Member extends Model
      */
     protected $casts = [
         'sequence' => 'integer',
+        'active' => 'boolean'
     ];
 
     /*

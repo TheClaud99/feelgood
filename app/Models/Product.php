@@ -60,6 +60,7 @@ class Product extends Model
      */
     protected $casts = [
         'sequence' => 'integer',
+        'active' => 'boolean'
     ];
 
     /*
