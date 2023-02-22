@@ -6,12 +6,12 @@
             :src="logoSrc"
             alt=""
         />
-        <img
+        <!-- <img
             :style="{ opacity: (1 - opacity) * 0.5 }"
             class="position-fixed"
             :src="logoWhite"
             alt=""
-        />
+        /> -->
     </a>
 </template>
 
