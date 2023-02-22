@@ -5,18 +5,18 @@ import laura from "@/../images/staff/Laura.png";
 
 <template>
     <section id="nostra_scuola" class="page position-relative">
-        <div class="container text-primary main-container">
+        <div class="container text-primary main-container feelstrange-font">
             <div class="row pb-5">
-                <div class="col-12 text-center feelstrange-font section-title">
-                    NOI
-                </div>
+                <div class="col-12 text-center section-title">NOI</div>
             </div>
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center text-center">
                 <div class="col-xs-12 col-md-4 p-5">
                     <img :src="jo" />
+                    <p>Jo</p>
                 </div>
                 <div class="col-xs-12 col-md-4 p-5 img-scuola-div">
                     <img :src="laura" />
+                    <p>Laura</p>
                 </div>
             </div>
         </div>
@@ -52,5 +52,9 @@ import laura from "@/../images/staff/Laura.png";
 
 img {
     max-width: 100%;
+}
+
+p {
+    font-size: 34px;
 }
 </style>
