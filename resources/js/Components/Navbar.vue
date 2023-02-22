@@ -16,7 +16,7 @@ const showingNavigationDropdown = ref(false);
         class="navbar navbar-expand-md navbar-dark bg-primary feelstrange-font position-absolute w-100"
     >
         <div class="container-fluid">
-            <div class="navbar-brand abs d-none" href="#">
+            <div class="navbar-brand abs d-md-none" href="#">
                 <img class="logo" :src="logo" />
             </div>
             <button
@@ -86,11 +86,6 @@ const showingNavigationDropdown = ref(false);
 
 .logo {
     max-height: 100px;
-}
-.navbar-brand.abs {
-    @include media-breakpoint-down(md) {
-        display: block !important;
-    }
 }
 
 /* Home section */
