@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('members', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->longText('description');
+            $table->longText('description')->nullable();
             $table->string('image')->nullable();
             $table->integer('sequence')->nullable();
             $table->boolean('active')->default(1);

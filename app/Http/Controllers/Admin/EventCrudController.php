@@ -44,9 +44,8 @@ class EventCrudController extends CrudController
         CRUD::column('date');
         CRUD::column('active');
         CRUD::column('image');
+        CRUD::field('link');
         CRUD::column('sequence');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -68,6 +67,7 @@ class EventCrudController extends CrudController
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
         CRUD::field('image')->type('upload')->upload(true);
+        CRUD::field('link')->type('url');
         CRUD::field('date')->type('datetime');
         CRUD::field('active')->default(1);
         CRUD::field('sequence')->type('number');

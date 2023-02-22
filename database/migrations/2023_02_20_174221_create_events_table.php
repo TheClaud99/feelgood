@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->longText('description')->nullable();
             $table->string('image')->nullable();
+            $table->string('link')->nullable();
             $table->dateTime('date')->nullable();
             $table->integer('sequence')->nullable();
             $table->boolean('active')->default(1);
