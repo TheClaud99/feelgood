@@ -5,7 +5,7 @@
         class="dot-orange position-fixed text-center d-flex align-items-center"
     >
         <svg
-            class="d-block w-75"
+            class="d-block"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384 512"
             fill="white"
@@ -52,13 +52,13 @@ a {
 
     svg {
         margin: 0 auto;
-        width: 49px;
+        width: 34px;
     }
 }
 
 .dot {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 0 5px;
     border-radius: 50%;
     margin: 0 auto;
