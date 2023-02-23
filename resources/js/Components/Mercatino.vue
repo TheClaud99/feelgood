@@ -1,14 +1,31 @@
 <script setup>
 // import MultipleItemCarousel from "@/Components/MultipleItemCarousel.vue";
+import { ref, computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import VueEasyLightbox from "vue-easy-lightbox";
 
-defineProps({
+const props = defineProps({
     products: {
         type: Array,
         default: [],
     },
 });
+
+const index = ref(null);
+const lightBoxVisible = ref(false);
+const images = computed(() =>
+    props.products.map((product) => ({
+        src: `/storage/${product.image}`,
+        title: product.name,
+    }))
+);
+
+function show(imageIndex) {
+    index.value = imageIndex;
+    lightBoxVisible.value = true;
+}
+const onHide = () => (lightBoxVisible.value = false);
 
 const breakpoints = {
     // 700px and up
@@ -46,16 +63,27 @@ const breakpoints = {
             </div>
             <div class="row pt-5">
                 <div class="col-xs-12">
+                    <VueEasyLightbox
+                        :visible="lightBoxVisible"
+                        :imgs="images"
+                        :index="index"
+                        :loop="true"
+                        @hide="onHide"
+                    />
                     <Carousel
                         :itemsToShow="2.95"
                         :wrapAround="true"
                         :transition="500"
                         :breakpoints="breakpoints"
                     >
-                        <Slide v-for="product in products" :key="product.id">
+                        <Slide
+                            v-for="(product, productIndex) in products"
+                            :key="product.id"
+                        >
                             <img
                                 :src="`/storage/${product.image}`"
                                 class="w-100 d-block"
+                                @click="show(productIndex)"
                             />
                         </Slide>
 

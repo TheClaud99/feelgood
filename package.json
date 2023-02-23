@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.2.3",
+        "vue-easy-lightbox": "^1.12.0",
         "vue3-carousel": "^0.2.9"
     }
 }
