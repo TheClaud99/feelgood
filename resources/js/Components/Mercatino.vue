@@ -12,7 +12,7 @@ defineProps({
 
 const breakpoints = {
     // 700px and up
-    576: {
+    0: {
         itemsToShow: 1,
         snapAlign: "center",
     },
@@ -26,11 +26,11 @@ const breakpoints = {
         snapAlign: "center",
     },
     1200: {
-        itemsToShow: 5,
+        itemsToShow: 3,
         snapAlign: "center",
     },
     1400: {
-        itemsToShow: 5,
+        itemsToShow: 3,
         snapAlign: "center",
     },
 };
@@ -87,23 +87,23 @@ const breakpoints = {
     transition: 0.5s;
 }
 
-.carousel__slide {
-    opacity: 0.9;
-    transform: rotateY(-20deg) scale(0.9);
-}
+// .carousel__slide {
+//     opacity: 0.9;
+//     transform: rotateY(-20deg) scale(0.9);
+// }
 
-.carousel__slide--active ~ .carousel__slide {
-    transform: rotateY(20deg) scale(0.9);
-}
+// .carousel__slide--active ~ .carousel__slide {
+//     transform: rotateY(20deg) scale(0.9);
+// }
 
 .carousel__slide--prev {
     opacity: 1;
-    transform: rotateY(-10deg) scale(0.95);
+    transform: rotateY(-10deg) scale(0.9);
 }
 
 .carousel__slide--next {
     opacity: 1;
-    transform: rotateY(10deg) scale(0.95);
+    transform: rotateY(10deg) scale(0.9);
 }
 
 .carousel__slide--active {

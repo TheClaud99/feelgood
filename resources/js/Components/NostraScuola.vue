@@ -18,9 +18,9 @@ import scuola3 from "@/../images/scuola 3.png";
                         Tommasi, ingegnere del suono, abbiamo potuto costruire
                         delle sale acusticamente professionali, un'ottima resa
                         acustica però sempre legata ad un'estetica piacevole e
-                        familiare.Il nostro spirito è proprio quello di far
+                        familiare. Il nostro spirito è proprio quello di far
                         sentire i nostri clienti non solo clienti ma parte di
-                        una realtà e di una famiglia, quella Feel Good!Al
+                        una realtà e di una famiglia, quella Feel Good! Al
                         momento gestita da Laura e Jo, colleghi nel lavoro,
                         marito e moglie nella vita, si impegnano ad accompagnare
                         per mano i primi passi dei nuovi musicisti ed a far
@@ -50,8 +50,12 @@ import scuola3 from "@/../images/scuola 3.png";
 p {
     text-align: justify;
 
+    @include media-breakpoint-up(md) {
+        font-size: 15px;
+    }
+
     @include media-breakpoint-up(xl) {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     @include media-breakpoint-up(xxl) {
