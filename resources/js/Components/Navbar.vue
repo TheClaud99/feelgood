@@ -47,7 +47,7 @@ const showingNavigationDropdown = ref(false);
                         <a class="nav-link" href="#contact_us">CONTATTI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""> EVENTI </a>
+                        <a class="nav-link" href="#eventi"> EVENTI </a>
                     </li>
                 </ul>
             </div>
