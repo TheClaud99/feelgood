@@ -41,7 +41,13 @@ section.page {
     background-size: cover;
 
     .section-title {
-        font-size: 48px;
+        @include media-breakpoint-up(xs) {
+            font-size: 34px;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 48px;
+        }
     }
 }
 
