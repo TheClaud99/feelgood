@@ -29,6 +29,10 @@ import scotch2 from "@/../images/scotch2.png";
 </template>
 
 <style scoped lang="scss">
+.home {
+    background-position-x: 36.5%;
+}
+
 .postit-container {
     width: 285px;
     height: 285px;
