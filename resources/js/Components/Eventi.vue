@@ -39,15 +39,15 @@ const breakpoints = {
         snapAlign: "center",
     },
     992: {
-        itemsToShow: 2.95,
+        itemsToShow: 2,
         snapAlign: "center",
     },
     1200: {
-        itemsToShow: 3,
+        itemsToShow: 2.5,
         snapAlign: "center",
     },
     1400: {
-        itemsToShow: 3,
+        itemsToShow: 2.5,
         snapAlign: "center",
     },
 };
@@ -82,7 +82,7 @@ const breakpoints = {
                         >
                             <img
                                 :src="`/storage/${event.image}`"
-                                class="w-100 d-block"
+                                class="d-block"
                                 @click="show(eventIndex)"
                             />
                         </Slide>
@@ -121,35 +121,46 @@ const breakpoints = {
     </section>
 </template>
 
-<style scoped lang="scss">
-.carousel__slide {
-    padding: 5px;
-}
+<style lang="scss">
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
-.carousel__viewport {
-    perspective: 2000px;
-}
+#eventi {
+    .carousel__slide {
+        padding: 5px;
+    }
 
-.carousel__track {
-    transform-style: preserve-3d;
-}
+    .carousel__viewport {
+        perspective: 2000px;
+    }
 
-.carousel__slide--sliding {
-    transition: 0.5s;
-}
+    .carousel__track {
+        transform-style: preserve-3d;
+    }
 
-.carousel__slide--prev {
-    opacity: 1;
-    transform: rotateY(-10deg) scale(0.9);
-}
+    .carousel__slide--sliding {
+        transition: 0.5s;
+    }
 
-.carousel__slide--next {
-    opacity: 1;
-    transform: rotateY(10deg) scale(0.9);
-}
+    .carousel__prev,
+    .carousel__next {
+        @include media-breakpoint-up(md) {
+            margin: 0px -40px !important;
+        }
+    }
 
-.carousel__slide--active {
-    opacity: 1;
-    transform: rotateY(0) scale(1.1);
+    .carousel__slide {
+        img {
+            width: 100%;
+        }
+
+        transform: rotateY(0) scale(0.95);
+    }
+
+    .carousel__slide--active {
+        opacity: 1;
+        transform: rotateY(0) scale(1);
+    }
 }
 </style>
