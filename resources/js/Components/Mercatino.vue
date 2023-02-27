@@ -122,44 +122,57 @@ const breakpoints = {
     </section>
 </template>
 
-<style scoped lang="scss">
-.carousel__slide {
-    padding: 5px;
-}
+<style lang="scss">
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
-.carousel__viewport {
-    perspective: 2000px;
-}
+#mercatino {
+    .carousel__slide {
+        padding: 5px;
+    }
 
-.carousel__track {
-    transform-style: preserve-3d;
-}
+    .carousel__viewport {
+        perspective: 2000px;
+    }
 
-.carousel__slide--sliding {
-    transition: 0.5s;
-}
+    .carousel__track {
+        transform-style: preserve-3d;
+    }
 
-// .carousel__slide {
-//     opacity: 0.9;
-//     transform: rotateY(-20deg) scale(0.9);
-// }
+    .carousel__slide--sliding {
+        transition: 0.5s;
+    }
 
-// .carousel__slide--active ~ .carousel__slide {
-//     transform: rotateY(20deg) scale(0.9);
-// }
+    .carousel__prev,
+    .carousel__next {
+        @include media-breakpoint-up(md) {
+            margin: 0px -23px !important;
+        }
+    }
 
-.carousel__slide--prev {
-    opacity: 1;
-    transform: rotateY(-10deg) scale(0.9);
-}
+    // .carousel__slide {
+    //     opacity: 0.9;
+    //     transform: rotateY(-20deg) scale(0.9);
+    // }
 
-.carousel__slide--next {
-    opacity: 1;
-    transform: rotateY(10deg) scale(0.9);
-}
+    // .carousel__slide--active ~ .carousel__slide {
+    //     transform: rotateY(20deg) scale(0.9);
+    // }
 
-.carousel__slide--active {
-    opacity: 1;
-    transform: rotateY(0) scale(1.1);
+    .carousel__slide--prev {
+        opacity: 1;
+        transform: rotateY(-10deg) scale(0.9);
+    }
+
+    .carousel__slide--next {
+        opacity: 1;
+        transform: rotateY(10deg) scale(0.9);
+    }
+
+    .carousel__slide--active {
+        opacity: 1;
+        transform: rotateY(0) scale(1.1);
+    }
 }
 </style>
