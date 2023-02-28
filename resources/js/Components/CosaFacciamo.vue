@@ -16,25 +16,37 @@ import altro from "@/../images/icons_rounded/altro.png";
                 </div>
             </div>
             <div class="row pt-5 align-items-center">
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="scuola" class="cosa-facciamo-icon" />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Scuola di musica
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="sale" class="cosa-facciamo-icon mixer" />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Sala prove
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img
                         :src="musicaInsieme"
                         class="cosa-facciamo-icon musica-insieme"
                     />
+                    <p class="text-center feelstrange-font d-md-none">
+                        Musica d'insieme
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="altro" class="cosa-facciamo-icon" />
+                    <p class="text-center feelstrange-font d-md-none">
+                        E molto altro
+                    </p>
                 </div>
             </div>
-            <div class="row pt-3 text-center text-primary">
+            <div class="row pt-3 text-center text-primary d-none d-md-flex">
                 <div class="col-xs-12 col-md-3">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         I nostri corsi di musica si cuciono addosso all'allievo
                         in modo da potergli dare ciò di cui ha bisogno. Il
                         nostro metodo è completamente personalizzato per poter
@@ -43,7 +55,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         Le nostre sale sono state costruite con amore a mano dai
                         titolari ed è proprio grazie a questo amore e la
                         professionalità del ingegnere del suono che le sale
@@ -52,7 +64,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         La nostra musica d'insieme non solo ti da la possibilità
                         di suonare o cantare con una vera e propria band
                         composta da altri allievi della scuola, ma ti regala
@@ -61,7 +73,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         Ci siamo sempre prefissati l'obbiettivo di non fermarci
                         ad una cosa ma cerchiamo sempre di migliorarci ed andare
                         avanti, evolverci. Per questo all'interno della Feel
