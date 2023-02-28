@@ -27,7 +27,10 @@ const showingNavigationDropdown = ref(false);
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="collapseNavbar">
+            <div
+                class="navbar-collapse collapse text-end text-md-center"
+                id="collapseNavbar"
+            >
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#nostre_sale"> SALE </a>
@@ -65,6 +68,10 @@ const showingNavigationDropdown = ref(false);
 
     &:hover {
         color: #e95a2d;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 4px;
     }
 }
 
