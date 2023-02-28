@@ -50,7 +50,7 @@ class Product extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['name', 'description', 'image', 'sequence', 'active'];
+    protected $fillable = ['name', 'description', 'image', 'photos', 'sequence', 'active'];
     // protected $hidden = [];
 
     /**
@@ -60,7 +60,8 @@ class Product extends Model
      */
     protected $casts = [
         'sequence' => 'integer',
-        'active' => 'boolean'
+        'active' => 'boolean',
+        'photos' => 'array'
     ];
 
     /*
@@ -99,7 +100,7 @@ class Product extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function setImageAttribute($value): void
+    public function setImageAttribute(String $value): void
     {
         $attribute_name = "image";
         $disk = "public";
@@ -108,5 +109,14 @@ class Product extends Model
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
 
         // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
+    }
+
+    public function setPhotosAttribute(String|array $value): void
+    {
+        $attribute_name = "photos";
+        $disk = "public";
+        $destination_path = "uploads";
+
+        $this->uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path);
     }
 }
