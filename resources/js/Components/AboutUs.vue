@@ -10,11 +10,11 @@ import laura from "@/../images/staff/Laura.png";
                 <div class="col-12 text-center section-title">NOI</div>
             </div>
             <div class="row justify-content-md-center text-center">
-                <div class="col-xs-12 col-md-4 p-5">
+                <div class="col-6 col-md-4 p-5">
                     <img :src="jo" />
                     <p>Jo</p>
                 </div>
-                <div class="col-xs-12 col-md-4 p-5 img-scuola-div">
+                <div class="col-6 col-md-4 p-5 img-scuola-div">
                     <img :src="laura" />
                     <p>Laura</p>
                 </div>
