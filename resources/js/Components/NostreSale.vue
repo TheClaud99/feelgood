@@ -7,24 +7,30 @@ import sala4 from "@/../images/sala4.jpeg";
 <template>
     <section id="nostre_sale" class="page position-relative bg-primary">
         <div class="container text-white main-container">
-            <div class="row pb-3">
+            <div class="row pb-sm-3">
                 <div class="col-12 text-center feelstrange-font section-title">
                     LE NOSTRE SALE
                 </div>
             </div>
-            <div class="row pt-5">
-                <div class="col-xs-12 col-md-4 text-center p-3">
-                    <img :src="sala2" class="w-100" />
+            <div class="row justify-content-center pt-md-5">
+                <div
+                    class="col-12 col-sm-6 col-md-4 text-center ps-5 pe-5 pb-2 p-sm-3"
+                >
+                    <img :src="sala2" class="w-100 d-block" />
                 </div>
-                <div class="col-xs-12 col-md-4 text-center p-3">
+                <div
+                    class="col-12 col-sm-6 col-md-4 text-center ps-5 pe-5 pb-2 p-sm-3"
+                >
                     <img :src="sala3" class="w-100" />
                 </div>
-                <div class="col-xs-12 col-md-4 text-center p-3">
-                    <img :src="sala4" class="w-100" />
+                <div
+                    class="col-12 col-sm-6 col-md-4 text-center ps-5 pe-5 pb-2 p-sm-3"
+                >
+                    <img :src="sala4" class="w-100 d-block" />
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 text-center p-3">
+                <div class="col-12 text-center p-3 d-none d-sm-block">
                     <p class="text-justify">
                         Le nostre sale sono state costruite con amore a mano dai
                         titolari ed è proprio grazie a questo amore misto alla
