@@ -16,24 +16,36 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 </div>
             </div>
             <div class="row pt-5 align-items-center">
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="mercatino" class="cosa-facciamo-icon mixer" />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Mercatino
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="grafico" class="cosa-facciamo-icon" />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Grafica
+                    </p>
                 </div>
 
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img :src="eventi" class="cosa-facciamo-icon" />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Eventi
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-6 col-md-3 text-center text-primary">
                     <img
                         :src="liuteria"
                         class="cosa-facciamo-icon musica-insieme"
                     />
+                    <p class="text-center feelstrange-font pb-5 d-md-none">
+                        Liuteria
+                    </p>
                 </div>
             </div>
-            <div class="row pt-3">
+            <div class="row pt-3 d-none d-md-flex">
                 <div class="col-xs-12 col-md-3 text-center text-primary">
                     <p class="p-3">
                         Nel nostro atrio si può trovare una zona dedicata alla
