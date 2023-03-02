@@ -12,8 +12,8 @@ import scuola3 from "@/../images/scuola 3.png";
                 </div>
             </div>
             <div class="row justify-content-md-center pt-3">
-                <div class="col-xs-12 col-md-5 p-3">
-                    <p class="text-justify">
+                <div class="col-12 col-md-5 p-3 order-1 order-md-12">
+                    <p class="text-justify overflow-hidden">
                         La Feel Good nasce nel 2012,grazie ai progetti di Luca
                         Tommasi, ingegnere del suono, abbiamo potuto costruire
                         delle sale acusticamente professionali, un'ottima resa
@@ -33,12 +33,13 @@ import scuola3 from "@/../images/scuola 3.png";
                     </p>
                 </div>
                 <div
-                    class="col-xs-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div"
+                    class="col-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div order-12 order-md-1"
                 >
-                    <img :src="scuola3" class="w-100" />
+                    <img :src="scuola3" class="w-100 d-block pointer-event-" />
                 </div>
             </div>
         </div>
+        <div class="shadow position-absolute w-100 pe-none d-md-none" />
     </section>
 </template>
 
@@ -46,6 +47,20 @@ import scuola3 from "@/../images/scuola 3.png";
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+
+.main-container {
+    height: 100%;
+}
+
+.shadow {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 38%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    height: 200px;
+    bottom: 0;
+}
 
 p {
     text-align: justify;
