@@ -39,6 +39,7 @@ section.page {
     height: 100vh;
     background-position: center top;
     background-size: cover;
+    overflow: hidden;
 
     .section-title {
         @include media-breakpoint-up(xs) {
