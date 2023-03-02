@@ -14,16 +14,25 @@ const props = defineProps({
 
 const index = ref(null);
 const lightBoxVisible = ref(false);
-const images = computed(() =>
-    props.products.map((product) => ({
+
+const images = ref([]);
+
+function show(product) {
+    index.value = 0;
+    if (product.photos) {
+        images.value = product.photos.map((photo) => ({
+            src: `/storage/${photo}`,
+            title: product.name,
+            alt: product.name,
+        }));
+    } else {
+        images.value = [];
+    }
+    images.value.unshift({
         src: `/storage/${product.image}`,
         title: product.name,
         alt: product.name,
-    }))
-);
-
-function show(imageIndex) {
-    index.value = imageIndex;
+    });
     lightBoxVisible.value = true;
 }
 const onHide = () => (lightBoxVisible.value = false);
@@ -84,7 +93,7 @@ const breakpoints = {
                             <img
                                 :src="`/storage/${product.image}`"
                                 class="w-100 d-block"
-                                @click="show(productIndex)"
+                                @click="show(product)"
                             />
                         </Slide>
 
