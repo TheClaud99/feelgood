@@ -1,12 +1,25 @@
 <script setup>
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import Curriculum from "./Curriculum.vue";
+import { Modal } from "bootstrap";
+import { ref } from "vue";
+
 defineProps({
     members: {
         type: Array,
         default: [],
     },
 });
+
+// Membro di cui è al momento aperto il curriculum
+const currentMember = ref({});
+
+function openModal(member) {
+    currentMember.value = member;
+    const modal = new Modal(document.getElementById("curriculumModal"), {});
+    modal.show();
+}
 </script>
 
 <template>
@@ -23,7 +36,10 @@ defineProps({
                 <template v-for="(member, index) in members" :key="member.id">
                     <div class="col-12" v-if="index % 5 === 0" />
 
-                    <div class="col-12 col-sm-2 text-center">
+                    <div
+                        class="col-12 col-sm-2 text-center"
+                        @click="openModal(member)"
+                    >
                         <img :src="`/storage/${member.image}`" class="" />
                         <div>
                             {{ member.name }}
@@ -42,10 +58,10 @@ defineProps({
                             v-for="(member, memberIndex) in members"
                             :key="member.id"
                         >
-                            <div>
+                            <div @click="openModal(member)">
                                 <img
                                     :src="`/storage/${member.image}`"
-                                    class="d-block w-100"
+                                    class="d-block"
                                 />
                                 <p>
                                     {{ member.name }}
@@ -110,6 +126,8 @@ defineProps({
         </div>
         <!-- <img :src="jack1" class="position-absolute jack1" />
         <img :src="jack2" class="position-absolute jack2" /> -->
+
+        <Curriculum id="curriculumModal" :member="currentMember" />
     </section>
 </template>
 
