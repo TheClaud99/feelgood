@@ -39,7 +39,7 @@ const showingNavigationDropdown = ref(false);
                         <a class="nav-link" href="#nostra_scuola"> SCUOLA </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nostro_team"> TEAM </a>
+                        <a class="nav-link" href="#nostro_team"> FAMIGLIA </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">

@@ -27,7 +27,7 @@ function openModal(member) {
         <div class="container text-white feelstrange-font main-container">
             <div class="row pb-3">
                 <div class="col-12 text-center section-title">
-                    IL NOSTRO TEAM
+                    LA NOSTRA FAMIGLIA
                 </div>
             </div>
             <div
