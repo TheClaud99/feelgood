@@ -2,7 +2,6 @@
 import { ref, computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import VueEasyLightbox from "vue-easy-lightbox";
 
 const props = defineProps({
     events: {
@@ -10,22 +9,6 @@ const props = defineProps({
         default: [],
     },
 });
-
-const index = ref(null);
-const lightBoxVisible = ref(false);
-const images = computed(() =>
-    props.events.map((event) => ({
-        src: `/storage/${event.image}`,
-        title: event.name,
-        alt: event.name,
-    }))
-);
-
-function show(imageIndex) {
-    index.value = imageIndex;
-    lightBoxVisible.value = true;
-}
-const onHide = () => (lightBoxVisible.value = false);
 
 const breakpoints = {
     // 700px and up
@@ -63,13 +46,6 @@ const breakpoints = {
             </div>
             <div class="row pt-5">
                 <div class="col-xs-12">
-                    <VueEasyLightbox
-                        :visible="lightBoxVisible"
-                        :imgs="images"
-                        :index="index"
-                        :loop="true"
-                        @hide="onHide"
-                    />
                     <Carousel
                         :itemsToShow="2.95"
                         :wrapAround="true"
@@ -80,11 +56,12 @@ const breakpoints = {
                             v-for="(event, eventIndex) in events"
                             :key="event.id"
                         >
-                            <img
-                                :src="`/storage/${event.image}`"
-                                class="d-block"
-                                @click="show(eventIndex)"
-                            />
+                            <a :href="event.link" target="_blank">
+                                <img
+                                    :src="`/storage/${event.image}`"
+                                    class="d-block"
+                                />
+                            </a>
                         </Slide>
 
                         <template #addons>
