@@ -45,31 +45,29 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
 img {
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     z-index: 1000;
-}
 
-@media (min-width: 768px) {
-    img {
-        max-width: 100px;
-        top: 60px;
+    @include media-breakpoint-up(md) {
+        max-width: 155px;
+        top: 34px;
     }
-}
 
-@media (min-width: 992px) {
-    img {
+    @include media-breakpoint-up(lg) {
         max-width: 200px;
         top: 30px;
     }
-}
 
-@media (max-width: 768px) {
-    img {
+    @include media-breakpoint-down(md) {
         display: none;
     }
 }
