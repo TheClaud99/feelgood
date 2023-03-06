@@ -25,7 +25,7 @@ function openModal(member) {
 <template>
     <section id="nostro_team" class="page position-relative bg-secondary">
         <div class="container text-white feelstrange-font main-container">
-            <div class="row pb-3">
+            <div class="row pb-sm-3">
                 <div class="col-12 text-center section-title">
                     LA NOSTRA FAMIGLIA
                 </div>
@@ -47,7 +47,7 @@ function openModal(member) {
                     </div>
                 </template>
             </div>
-            <div class="row pt-5 d-sm-none">
+            <div class="d-sm-none flex-grow-1 align-content-center pt-sm-5 row">
                 <div class="col-xs-12">
                     <Carousel
                         :itemsToShow="1"
@@ -131,18 +131,10 @@ function openModal(member) {
     </section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
-img {
-    max-width: 100%;
-
-    @include media-breakpoint-up(xl) {
-        max-width: 200px;
-    }
-}
 
 #nostro_team {
     .carousel__slide {
@@ -151,6 +143,10 @@ img {
 
     .carousel__viewport {
         perspective: 2000px;
+    }
+    .carousel__pagination {
+        padding: 0 !important;
+        padding-inline-start: 0;
     }
 
     .carousel__track {
@@ -163,14 +159,13 @@ img {
 
     .carousel__prev,
     .carousel__next {
-        @include media-breakpoint-up(md) {
-            margin: 0px -40px !important;
-        }
+        margin: 0 !important;
     }
 
     .carousel__slide {
         img {
-            width: 100%;
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         transform: rotateY(0) scale(0.95);
@@ -183,6 +178,21 @@ img {
     .carousel__slide--active {
         opacity: 1;
         transform: rotateY(0) scale(1);
+    }
+
+    img {
+        max-width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            max-width: 200px;
+        }
+    }
+
+    .main-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 </style>
