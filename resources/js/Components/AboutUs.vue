@@ -6,17 +6,19 @@ import laura from "@/../images/staff/Laura.png";
 <template>
     <section id="nostra_scuola" class="page position-relative">
         <div class="container text-primary main-container feelstrange-font">
-            <div class="row pb-5">
+            <div class="row pb-3 pb-md-5">
                 <div class="col-12 text-center section-title">NOI</div>
             </div>
-            <div class="row justify-content-md-center text-center">
-                <div class="col-6 col-md-4 p-5">
-                    <img :src="jo" />
-                    <p>Jo</p>
-                </div>
-                <div class="col-6 col-md-4 p-5 img-scuola-div">
+            <div
+                class="row justify-content-center text-center flex-grow-1 align-content-center"
+            >
+                <div class="col-8 col-sm-6 col-md-4 p-md-5">
                     <img :src="laura" />
                     <p>Laura</p>
+                </div>
+                <div class="col-8 col-sm-6 col-md-4 p-md-5">
+                    <img :src="jo" />
+                    <p>Jo</p>
                 </div>
             </div>
         </div>
@@ -29,6 +31,11 @@ import laura from "@/../images/staff/Laura.png";
 @import "../node_modules/bootstrap/scss/mixins";
 
 .main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @include media-breakpoint-up(sm) {
         padding: 35px 10px 0 10px;
     }
