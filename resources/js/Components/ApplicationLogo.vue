@@ -1,5 +1,5 @@
 <template>
-    <a href="#">
+    <a v-if="opacity > 0" href="#">
         <img
             :style="{ opacity: opacity }"
             class="position-fixed"
