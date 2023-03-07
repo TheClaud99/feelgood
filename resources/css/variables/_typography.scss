@@ -28,4 +28,12 @@ $headings-font-weight: 800;
         url(@/../styles/fonts/FeelStrange.otf) format("opentype");
 }
 
+@font-face {
+    font-family: "Ascrada";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Ascrada"), url(@/../styles/fonts/Ascrada.ttf) format("truetype");
+}
+
 $feelstrange-font: "FeelStrange";
+$ascrada-font: "Ascrada";
