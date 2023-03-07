@@ -33,13 +33,15 @@ const showingNavigationDropdown = ref(false);
             >
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#nostre_sale"> SALE </a>
+                        <a class="nav-link" href="#nostre_sale">LE SALE </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#nostra_scuola"> SCUOLA </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nostro_team"> FAMIGLIA </a>
+                        <a class="nav-link" href="#nostro_team">
+                            LA FAMIGLIA
+                        </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
@@ -47,10 +49,10 @@ const showingNavigationDropdown = ref(false);
                         <a class="nav-link" href="#mercatino"> MERCATINO </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact_us">CONTATTI</a>
+                        <a class="nav-link" href="#eventi"> EVENTI </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eventi"> EVENTI </a>
+                        <a class="nav-link" href="#contact_us">CONTATTI</a>
                     </li>
                 </ul>
             </div>
