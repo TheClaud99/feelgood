@@ -15,39 +15,56 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     ALTRI SERVIZI
                 </div>
             </div>
-            <div class="row pt-5 align-items-center">
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="mercatino" class="cosa-facciamo-icon mixer" />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Mercatino
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="grafico" class="cosa-facciamo-icon" />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Grafica
-                    </p>
-                </div>
+            <div class="row pt-5 flex-grow-1 align-items-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img
+                                :src="mercatino"
+                                class="cosa-facciamo-icon mixer"
+                            />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Mercatino
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img :src="grafico" class="cosa-facciamo-icon" />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Grafica
+                            </p>
+                        </div>
 
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="eventi" class="cosa-facciamo-icon" />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Eventi
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img
-                        :src="liuteria"
-                        class="cosa-facciamo-icon musica-insieme"
-                    />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Liuteria
-                    </p>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img :src="eventi" class="cosa-facciamo-icon" />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Eventi
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img
+                                :src="liuteria"
+                                class="cosa-facciamo-icon musica-insieme"
+                            />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Liuteria
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row pt-3 d-none d-md-flex">
+            <div
+                class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex overflow-hidden"
+            >
                 <div class="col-xs-12 col-md-3 text-center text-primary">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         Nel nostro atrio si può trovare una zona dedicata alla
                         vendita di strumenti usati, abbiamo voluto dare uno
                         spazio fisico dove il possibile interessato possa
@@ -56,7 +73,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center text-primary">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         Jo oltre ad aver fatto per anni il Tatuatore,
                         appassionato di illustrazione, fotografia, street art,
                         ecc, si è affacciato all'arte della grafica ormai da
@@ -67,7 +84,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 </div>
 
                 <div class="col-xs-12 col-md-3 text-center text-primary">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         I nostri eventi non si fermano al Feel Good musica fest
                         di Maggio/GIugno ma nell'arco dell'anno organizziamo Jam
                         session nelle quali coinvolgiamo anche i nostri allievi.
@@ -76,7 +93,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center text-primary">
-                    <p class="p-3">
+                    <p class="p-lg-3">
                         All'interno disponiamo anche di un laboratorio di
                         liuteria dove è possibile riparare chitarre o bassi
                         Facciamo assistenza ai nostri allievi ed insegnanti e
@@ -102,8 +119,8 @@ import eventi from "@/../images/icons_rounded/eventi.png";
 p {
     text-align: justify;
 
-    @include media-breakpoint-up(xl) {
-        font-size: 20px;
+    @include media-breakpoint-up(xs) {
+        font-size: 17px;
     }
 
     @include media-breakpoint-up(xxl) {

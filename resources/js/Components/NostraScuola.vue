@@ -11,31 +11,42 @@ import scuola3 from "@/../images/scuola 3.png";
                     LA NOSTRA SCUOLA
                 </div>
             </div>
-            <div class="row justify-content-md-center pt-3">
-                <div class="col-12 col-md-5 p-3 order-1 order-md-12">
-                    <p class="text-justify overflow-hidden">
-                        La Feel Good nasce nel 2012,grazie ai progetti di Luca
-                        Tommasi, ingegnere del suono, abbiamo potuto costruire
-                        delle sale acusticamente professionali, un'ottima resa
-                        acustica però sempre legata ad un'estetica piacevole e
-                        familiare. Il nostro spirito è proprio quello di far
-                        sentire i nostri clienti non solo clienti ma parte di
-                        una realtà e di una famiglia, quella Feel Good! Al
-                        momento gestita da Laura e Jo, colleghi nel lavoro,
-                        marito e moglie nella vita, si impegnano ad accompagnare
-                        per mano i primi passi dei nuovi musicisti ed a far
-                        continuare gli studi a chi è già più navigato, seguendo
-                        tutti gli allievi dal primo approccio alla musica,
-                        all'acquisto del proprio strumento fino alle esibizioni
-                        su un palco. Non ultimi per importanza, le colonne
-                        portanti della scuola, il nostro team insegnanti, la
-                        nostra famiglia!
-                    </p>
-                </div>
-                <div
-                    class="col-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div order-12 order-md-1"
-                >
-                    <img :src="scuola3" class="w-100 d-block pointer-event-" />
+            <div
+                class="row justify-content-md-center flex-grow-1 align-items-center overflow-hidden pt-3"
+            >
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-5 p-3 order-1 order-md-12">
+                            <p class="text-justify overflow-hidden">
+                                La Feel Good nasce nel 2012,grazie ai progetti
+                                di Luca Tommasi, ingegnere del suono, abbiamo
+                                potuto costruire delle sale acusticamente
+                                professionali, un'ottima resa acustica però
+                                sempre legata ad un'estetica piacevole e
+                                familiare. Il nostro spirito è proprio quello di
+                                far sentire i nostri clienti non solo clienti ma
+                                parte di una realtà e di una famiglia, quella
+                                Feel Good! Al momento gestita da Laura e Jo,
+                                colleghi nel lavoro, marito e moglie nella vita,
+                                si impegnano ad accompagnare per mano i primi
+                                passi dei nuovi musicisti ed a far continuare
+                                gli studi a chi è già più navigato, seguendo
+                                tutti gli allievi dal primo approccio alla
+                                musica, all'acquisto del proprio strumento fino
+                                alle esibizioni su un palco. Non ultimi per
+                                importanza, le colonne portanti della scuola, il
+                                nostro team insegnanti, la nostra famiglia!
+                            </p>
+                        </div>
+                        <div
+                            class="col-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div order-12 order-md-1"
+                        >
+                            <img
+                                :src="scuola3"
+                                class="w-100 d-block pointer-event-"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

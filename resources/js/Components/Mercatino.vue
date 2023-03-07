@@ -71,7 +71,7 @@ const breakpoints = {
                     MERCATINO
                 </div>
             </div>
-            <div class="row pt-5">
+            <div class="row pt-sm-5 flex-grow-1 align-items-center">
                 <div class="col-xs-12">
                     <VueEasyLightbox
                         :visible="lightBoxVisible"

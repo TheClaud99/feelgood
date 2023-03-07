@@ -10,41 +10,51 @@ import altro from "@/../images/icons_rounded/altro.png";
 <template>
     <section id="cosa_facciamo" class="page position-relative">
         <div class="container text-primary main-container">
-            <div class="row pb-3">
+            <div class="row pb-sm-3">
                 <div class="col-12 text-center feelstrange-font section-title">
                     COSA FACCIAMO
                 </div>
             </div>
-            <div class="row pt-5 align-items-center">
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="scuola" class="cosa-facciamo-icon" />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Scuola di musica
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="sale" class="cosa-facciamo-icon mixer" />
-                    <p class="text-center feelstrange-font pb-5 d-md-none">
-                        Sala prove
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img
-                        :src="musicaInsieme"
-                        class="cosa-facciamo-icon musica-insieme"
-                    />
-                    <p class="text-center feelstrange-font d-md-none">
-                        Musica d'insieme
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 text-center text-primary">
-                    <img :src="altro" class="cosa-facciamo-icon" />
-                    <p class="text-center feelstrange-font d-md-none">
-                        E molto altro
-                    </p>
+            <div class="row pt-5 flex-grow-1 align-items-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img :src="scuola" class="cosa-facciamo-icon" />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Scuola di musica
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img :src="sale" class="cosa-facciamo-icon mixer" />
+                            <p
+                                class="text-center feelstrange-font pb-5 d-md-none"
+                            >
+                                Sala prove
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img
+                                :src="musicaInsieme"
+                                class="cosa-facciamo-icon musica-insieme"
+                            />
+                            <p class="text-center feelstrange-font d-md-none">
+                                Musica d'insieme
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-primary">
+                            <img :src="altro" class="cosa-facciamo-icon" />
+                            <p class="text-center feelstrange-font d-md-none">
+                                E molto altro
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row pt-3 text-center text-primary d-none d-md-flex">
+            <div
+                class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex"
+            >
                 <div class="col-xs-12 col-md-3">
                     <p class="p-lg-3">
                         I nostri corsi di musica si cuciono addosso all'allievo
