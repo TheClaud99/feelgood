@@ -15,7 +15,7 @@ import scuola3 from "@/../images/scuola 3.png";
                 class="row justify-content-md-center flex-grow-1 align-items-center overflow-hidden pt-3"
             >
                 <div class="col-12">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-12 col-md-5 p-3 order-1 order-md-12">
                             <p class="text-justify overflow-hidden">
                                 La Feel Good nasce nel 2012,grazie ai progetti
@@ -41,10 +41,7 @@ import scuola3 from "@/../images/scuola 3.png";
                         <div
                             class="col-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div order-12 order-md-1"
                         >
-                            <img
-                                :src="scuola3"
-                                class="w-100 d-block pointer-event-"
-                            />
+                            <img :src="scuola3" class="w-100 d-block" />
                         </div>
                     </div>
                 </div>
