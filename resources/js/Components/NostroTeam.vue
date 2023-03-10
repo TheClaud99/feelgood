@@ -31,7 +31,7 @@ function openModal(member) {
                 </div>
             </div>
             <div
-                class="row pt-5 justify-content-sm-center flex-grow-1 d-none d-sm-flex"
+                class="row pt-5 justify-content-sm-center flex-grow-1 d-none d-sm-flex member-row"
             >
                 <template v-for="(member, index) in members" :key="member.id">
                     <div class="col-12" v-if="index % 5 === 0" />
@@ -180,19 +180,21 @@ function openModal(member) {
         transform: rotateY(0) scale(1);
     }
 
-    img {
-        max-width: 100%;
-
-        @include media-breakpoint-up(xl) {
-            max-width: 200px;
-        }
-    }
-
     .main-container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        .member-row {
+            img {
+                max-width: 100%;
+
+                @include media-breakpoint-up(xl) {
+                    max-width: 200px;
+                }
+            }
+        }
     }
 }
 </style>
