@@ -46,7 +46,7 @@ import postit from "@/../images/postit.png";
                 <div
                     class="col-xs-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div"
                 >
-                    <img src="/mappa.png" class="w-100" />
+                    <GoogleMapLoader />
                 </div>
                 <div class="col-12 d-flex justify-content-center">
                     <a
