@@ -1,5 +1,6 @@
 <script setup>
 import postit from "@/../images/postit.png";
+import GoogleMapLoader from "./GoogleMapLoader.vue";
 </script>
 
 <template>
