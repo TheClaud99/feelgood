@@ -46,7 +46,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                         <div class="col-6 col-md-3 text-center text-primary">
                             <img :src="altro" class="cosa-facciamo-icon" />
                             <p class="text-center feelstrange-font d-md-none">
-                                E molto altro
+                                E molto altro...
                             </p>
                         </div>
                     </div>
@@ -56,6 +56,9 @@ import altro from "@/../images/icons_rounded/altro.png";
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex"
             >
                 <div class="col-xs-12 col-md-3">
+                    <p class="text-center feelstrange-font mb-0">
+                        Scuola di musica
+                    </p>
                     <p class="p-lg-3">
                         I nostri corsi di musica si cuciono addosso all'allievo
                         in modo da potergli dare ciò di cui ha bisogno. Il
@@ -65,6 +68,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
+                    <p class="text-center feelstrange-font mb-0">Sala prove</p>
                     <p class="p-lg-3">
                         Le nostre sale sono state costruite con amore a mano dai
                         titolari ed è proprio grazie a questo amore e la
@@ -74,6 +78,9 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
+                    <p class="text-center feelstrange-font mb-0">
+                        Musica d'insieme
+                    </p>
                     <p class="p-lg-3">
                         La nostra musica d'insieme non solo ti da la possibilità
                         di suonare o cantare con una vera e propria band
@@ -83,6 +90,9 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3">
+                    <p class="text-center feelstrange-font mb-0">
+                        E molto altro...
+                    </p>
                     <p class="p-lg-3">
                         Ci siamo sempre prefissati l'obbiettivo di non fermarci
                         ad una cosa ma cerchiamo sempre di migliorarci ed andare
