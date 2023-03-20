@@ -3,6 +3,13 @@ import menuImage from "@/../images/menu.png";
 import postit from "@/../images/postit.png";
 import scotch1 from "@/../images/scotch1.png";
 import scotch2 from "@/../images/scotch2.png";
+
+defineProps({
+    post: {
+        type: Object,
+        default: [],
+    },
+});
 </script>
 
 <template>
@@ -17,7 +24,7 @@ import scotch2 from "@/../images/scotch2.png";
             >
                 <img :src="scotch1" class="position-absolute scotch-1" />
                 <img :src="scotch2" class="position-absolute scotch-2" />
-                <img class="postit-image" src="/post.jpg" />
+                <img class="postit-image" :src="`/storage/${post.image}`" />
             </div>
         </div>
         <a

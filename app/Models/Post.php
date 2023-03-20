@@ -85,7 +85,7 @@ class Post extends Model
     public function scopeActive($query): void
     {
         $query->where('active', true)
-            ->orderBy('sequence', 'ASC');
+            ->orderBy('date', 'DESC');
     }
 
     /*
