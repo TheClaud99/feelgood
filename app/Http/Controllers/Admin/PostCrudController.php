@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\ProductRequest;
+use App\Http\Requests\PostRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
+use DateTime;
 
 /**
- * Class ProductCrudController
+ * Class PostCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class ProductCrudController extends CrudController
+class PostCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -24,11 +25,11 @@ class ProductCrudController extends CrudController
      * 
      * @return void
      */
-    public function setup(): void
+    public function setup()
     {
-        CRUD::setModel(\App\Models\Product::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/product');
-        CRUD::setEntityNameStrings('product', 'products');
+        CRUD::setModel(\App\Models\Post::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/post');
+        CRUD::setEntityNameStrings('post', 'posts');
     }
 
     /**
@@ -37,17 +38,14 @@ class ProductCrudController extends CrudController
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
-    protected function setupListOperation(): void
+    protected function setupListOperation()
     {
         CRUD::column('name');
-        CRUD::column('description');
-        CRUD::column('image');
-        CRUD::column('price');
-        CRUD::column('sequence');
         CRUD::column('active');
-        CRUD::column('created_at');
-        CRUD::column('deleted_at');
-        CRUD::column('updated_at');
+        CRUD::column('image');
+        CRUD::field('link');
+        CRUD::column('sequence');
+        CRUD::column('date');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -62,17 +60,15 @@ class ProductCrudController extends CrudController
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
-    protected function setupCreateOperation(): void
+    protected function setupCreateOperation()
     {
-        CRUD::setValidation(ProductRequest::class);
+        CRUD::setValidation(PostRequest::class);
 
         CRUD::field('name');
-        CRUD::field('description')->type('summernote');
-        CRUD::field('price');
         CRUD::field('image')->type('upload')->upload(true)->disk('public');
-        CRUD::field('photos')->type('upload_multiple')->upload(true)->disk('public');
-        CRUD::field('sequence')->type('number');
+        CRUD::field('link')->type('url');
         CRUD::field('active')->default(1);
+        CRUD::field('date')->type('datetime')->default('now');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
@@ -87,7 +83,7 @@ class ProductCrudController extends CrudController
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */
-    protected function setupUpdateOperation(): void
+    protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
     }

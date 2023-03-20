@@ -48,6 +48,11 @@ import scuola3 from "@/../images/scuola 3.png";
             </div>
         </div>
         <div class="shadow position-absolute w-100 pe-none d-md-none" />
+        <!-- <button
+            class="btn btn-light position-absolute rounded-pill feelstrange-font ml-auto mr-auto"
+        >
+            LEGGI DI PIù
+        </button> -->
     </section>
 </template>
 
@@ -68,6 +73,17 @@ import scuola3 from "@/../images/scuola 3.png";
     );
     height: 200px;
     bottom: 0;
+}
+
+button {
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 147px;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
 }
 
 p {

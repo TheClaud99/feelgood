@@ -67,7 +67,7 @@ class MemberCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
-        CRUD::field('image')->type('upload')->upload(true);
+        CRUD::field('image')->type('upload')->upload(true)->disk('public');
         CRUD::field('sequence')->type('number');
         CRUD::field('active')->default(1);
 
