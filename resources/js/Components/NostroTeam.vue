@@ -24,14 +24,14 @@ function openModal(member) {
 
 <template>
     <section id="nostro_team" class="page position-relative bg-secondary">
-        <div class="container text-white feelstrange-font main-container">
+        <div class="container-fluid text-white feelstrange-font main-container">
             <div class="row pb-sm-3">
                 <div class="col-12 text-center section-title">
                     LA NOSTRA FAMIGLIA
                 </div>
             </div>
             <div
-                class="row pt-5 justify-content-sm-center flex-grow-1 d-none d-sm-flex member-row"
+                class="row pt-3 justify-content-sm-center flex-grow-1 d-none d-sm-flex member-row"
             >
                 <template v-for="(member, index) in members" :key="member.id">
                     <div class="col-12" v-if="index % 5 === 0" />
@@ -41,8 +41,11 @@ function openModal(member) {
                         @click="openModal(member)"
                     >
                         <img :src="`/storage/${member.image}`" class="" />
-                        <div>
+                        <div class="name">
                             {{ member.name }}
+                        </div>
+                        <div class="instrument">
+                            {{ member.instrument }}
                         </div>
                     </div>
                 </template>
@@ -63,9 +66,12 @@ function openModal(member) {
                                     :src="`/storage/${member.image}`"
                                     class="d-block"
                                 />
-                                <p>
+                                <div>
                                     {{ member.name }}
-                                </p>
+                                </div>
+                                <div class="instrument">
+                                    {{ member.instrument }}
+                                </div>
                             </div>
                         </Slide>
 
@@ -186,12 +192,35 @@ function openModal(member) {
         flex-direction: column;
         justify-content: center;
 
+        .instrument {
+            font-family: var(--bs-body-font-family);
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 0.9rem;
+            }
+        }
+
+        .name {
+            line-height: 1.3rem;
+            padding-top: 0.3rem;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.25rem;
+            }
+        }
+
         .member-row {
             img {
                 max-width: 100%;
 
                 @include media-breakpoint-up(xl) {
                     max-width: 200px;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    max-width: 100%;
                 }
             }
         }

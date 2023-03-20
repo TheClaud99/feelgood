@@ -50,7 +50,7 @@ class Member extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['name', 'description', 'image', 'sequence', 'active'];
+    protected $fillable = ['name', 'description', 'instrument', 'image', 'sequence', 'active'];
     // protected $hidden = [];
 
     /**
