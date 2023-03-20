@@ -41,6 +41,7 @@ class MemberCrudController extends CrudController
     {
         CRUD::column('name');
         CRUD::column('description');
+        CRUD::column('instrument');
         CRUD::column('active');
         CRUD::column('image');
         CRUD::column('sequence');
@@ -67,6 +68,7 @@ class MemberCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
+        CRUD::field('instrument');
         CRUD::field('image')->type('upload')->upload(true)->disk('public');
         CRUD::field('sequence')->type('number');
         CRUD::field('active')->default(1);

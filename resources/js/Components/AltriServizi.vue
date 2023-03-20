@@ -64,6 +64,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex overflow-hidden"
             >
                 <div class="col-xs-12 col-md-3 text-center text-primary">
+                    <p class="text-center feelstrange-font mb-0">Mercatino</p>
                     <p class="p-lg-3">
                         Nel nostro atrio si può trovare una zona dedicata alla
                         vendita di strumenti usati, abbiamo voluto dare uno
@@ -73,6 +74,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center text-primary">
+                    <p class="text-center feelstrange-font mb-0">Grafica</p>
                     <p class="p-lg-3">
                         Jo oltre ad aver fatto per anni il Tatuatore,
                         appassionato di illustrazione, fotografia, street art,
@@ -84,6 +86,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 </div>
 
                 <div class="col-xs-12 col-md-3 text-center text-primary">
+                    <p class="text-center feelstrange-font mb-0">Eventi</p>
                     <p class="p-lg-3">
                         I nostri eventi non si fermano al Feel Good musica fest
                         di Maggio/GIugno ma nell'arco dell'anno organizziamo Jam
@@ -93,6 +96,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center text-primary">
+                    <p class="text-center feelstrange-font mb-0">Liuteria</p>
                     <p class="p-lg-3">
                         All'interno disponiamo anche di un laboratorio di
                         liuteria dove è possibile riparare chitarre o bassi
