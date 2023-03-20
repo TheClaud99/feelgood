@@ -69,8 +69,8 @@ class ProductCrudController extends CrudController
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
         CRUD::field('price');
-        CRUD::field('image')->type('upload')->upload(true);
-        CRUD::field('photos')->type('upload_multiple')->upload(true);
+        CRUD::field('image')->type('upload')->upload(true)->disk('public');
+        CRUD::field('photos')->type('upload_multiple')->upload(true)->disk('public');
         CRUD::field('sequence')->type('number');
         CRUD::field('active')->default(1);
 
