@@ -1,7 +1,7 @@
 <script setup>
-import sala2 from "@/../images/sala2.jpeg";
-import sala3 from "@/../images/sala3.jpeg";
-import sala4 from "@/../images/sala4.jpeg";
+import sala2 from "@/../images/sala2.jpg";
+import sala3 from "@/../images/sala3.jpg";
+import sala4 from "@/../images/sala4.jpg";
 </script>
 
 <template>
