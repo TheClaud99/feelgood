@@ -24,7 +24,9 @@ defineProps({
             >
                 <img :src="scotch1" class="position-absolute scotch-1" />
                 <img :src="scotch2" class="position-absolute scotch-2" />
-                <img class="postit-image" :src="`/storage/${post.image}`" />
+                <a target="_blank" :href="post.link">
+                    <img class="postit-image" :src="`/storage/${post.image}`" />
+                </a>
             </div>
         </div>
         <a
@@ -78,7 +80,7 @@ defineProps({
     }
 }
 
-a {
+a[href="#contact_us"] {
     bottom: 10px;
     left: 0;
     right: 0;
