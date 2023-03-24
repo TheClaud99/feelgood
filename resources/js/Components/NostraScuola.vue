@@ -17,24 +17,24 @@ import scuola3 from "@/../images/scuola 3.jpg";
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-5 p-3 order-1 order-md-12">
                             <p class="text-justify overflow-hidden">
-                                La Feel Good nasce nel 2012,grazie ai progetti
-                                di Luca Tommasi, ingegnere del suono, abbiamo
-                                potuto costruire delle sale acusticamente
-                                professionali, un'ottima resa acustica però
-                                sempre legata ad un'estetica piacevole e
-                                familiare. Il nostro spirito è proprio quello di
-                                far sentire i nostri clienti non solo clienti ma
-                                parte di una realtà e di una famiglia, quella
-                                Feel Good! Al momento gestita da Laura e Jo,
-                                colleghi nel lavoro, marito e moglie nella vita,
-                                si impegnano ad accompagnare per mano i primi
-                                passi dei nuovi musicisti ed a far continuare
-                                gli studi a chi è già più navigato, seguendo
-                                tutti gli allievi dal primo approccio alla
-                                musica, all'acquisto del proprio strumento fino
-                                alle esibizioni su un palco. Non ultimi per
-                                importanza, le colonne portanti della scuola, il
-                                nostro team insegnanti, la nostra famiglia!
+                                I nostri corsi sono costruiti intorno alle
+                                esigenze dell'allievo.
+                                <br class="d-none d-sm-block" />La prima lezione
+                                è gratuita e serve per dar la possibilità al
+                                nuovo allievo di conoscere noi, l'insegnante e
+                                vedere la struttura. Facciamo pacchetti da 4
+                                lezioni che si svolgono settimanalmente.
+                                <br class="d-none d-sm-block" />Abbiamo lezioni
+                                da 1h individuali o di classe, per i più piccoli
+                                invece, per creare un primo approccio alla
+                                musica, abbiamo creato delle lezioni da 30min. I
+                                nostri allievi si interfacceranno anche con gli
+                                allievi degli altri strumenti con la musica
+                                d'insieme, avranno la possibilità di esibirsi su
+                                un palco, sia a inizio e/o fine anno che durante
+                                tutto l'anno scolastico nei vari eventi che
+                                faremo. <br class="d-none d-sm-block" />
+                                Vieni a trovarci, ti aspettiamo!
                             </p>
                         </div>
                         <div
@@ -93,11 +93,11 @@ p {
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     @include media-breakpoint-up(xxl) {
-        font-size: 20px;
+        font-size: 21px;
     }
 }
 </style>
