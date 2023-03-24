@@ -1,6 +1,5 @@
 <script setup>
-import scuola1 from "@/../images/scuola 1.png";
-import scuola3 from "@/../images/scuola 3.png";
+import scuola3 from "@/../images/scuola 3.jpg";
 </script>
 
 <template>
