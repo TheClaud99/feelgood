@@ -12,15 +12,13 @@ import GoogleMapLoader from "./GoogleMapLoader.vue";
                 </div>
             </div>
             <div
-                class="flex-grow-1 justify-content-md-center overflow-hidden pt-3 row"
+                class="row justify-content-center flex-grow-1 align-items-center overflow-hidden pt-3"
             >
-                <div
-                    class="col-xs-12 col-md-6 p-3 d-flex flex-column text-white"
-                >
+                <div class="col-12 col-md-6 p-3 d-flex flex-column text-white">
                     <div class="row">
                         <div class="col-1"></div>
                         <div
-                            class="col-9 postit-container ascrada-font text-black position-relative"
+                            class="col-10 col-md-9 postit-container ascrada-font text-black position-relative"
                         >
                             <img :src="postit" class="w-100" />
                             <div class="position-absolute postit-text">
@@ -44,9 +42,7 @@ import GoogleMapLoader from "./GoogleMapLoader.vue";
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-xs-12 col-md-6 col-lg-5 text-center p-3 img-scuola-div"
-                >
+                <div class="col-12 col-md-6 col-lg-5 text-center maps">
                     <GoogleMapLoader />
                 </div>
                 <div class="col-12 d-flex justify-content-center">
@@ -113,6 +109,14 @@ a {
     font-size: 17px;
 }
 
+.maps {
+    height: 33.3%;
+
+    @include media-breakpoint-up(md) {
+        height: 71%;
+    }
+}
+
 svg {
     padding-right: 20px;
     padding-left: 20px;
@@ -128,8 +132,8 @@ svg {
         transform: translate(-50%, -50%) rotate(-3deg);
 
         @include media-breakpoint-up(xs) {
-            line-height: 16px;
-            font-size: 23px;
+            line-height: 18px;
+            font-size: 29px;
         }
 
         @include media-breakpoint-up(sm) {
