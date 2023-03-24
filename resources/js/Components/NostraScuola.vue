@@ -1,5 +1,12 @@
 <script setup>
 import scuola3 from "@/../images/scuola 3.jpg";
+import { Modal } from "bootstrap";
+import NostraScuolaModal from "./NostraScuolaModal.vue";
+
+function openModal() {
+    const modal = new Modal(document.getElementById("nostraScuolaModal"), {});
+    modal.show();
+}
 </script>
 
 <template>
@@ -47,11 +54,14 @@ import scuola3 from "@/../images/scuola 3.jpg";
             </div>
         </div>
         <div class="shadow position-absolute w-100 pe-none d-md-none" />
-        <!-- <button
-            class="btn btn-light position-absolute rounded-pill feelstrange-font ml-auto mr-auto"
+        <button
+            @click="openModal"
+            class="btn btn-light position-absolute rounded-pill feelstrange-font ml-auto mr-auto d-block d-md-none"
         >
             LEGGI DI PIù
-        </button> -->
+        </button>
+
+        <NostraScuolaModal id="nostraScuolaModal" />
     </section>
 </template>
 
@@ -75,7 +85,7 @@ import scuola3 from "@/../images/scuola 3.jpg";
 }
 
 button {
-    bottom: 10px;
+    bottom: 34px;
     left: 0;
     right: 0;
     margin-right: auto;
