@@ -61,6 +61,31 @@ const breakpoints = {
         snapAlign: "center",
     },
 };
+
+function isVisible(productIndex, currentSlide, slidesCount) {
+    const range = 2;
+
+    if (slidesCount == 0) {
+        return false;
+    }
+    if (range * 2 > slidesCount) {
+        return true;
+    }
+    let from = currentSlide - range;
+    let to = currentSlide + range;
+
+    if (from < 0) {
+        from = from + slidesCount;
+        return productIndex >= from || productIndex <= to;
+    }
+
+    if (to >= slidesCount) {
+        to = to % slidesCount;
+        return productIndex >= from || productIndex <= to;
+    }
+
+    return from <= productIndex && productIndex <= to;
+}
 </script>
 
 <template>
@@ -81,21 +106,29 @@ const breakpoints = {
                         @hide="onHide"
                     />
                     <Carousel
-                        :itemsToShow="2.95"
                         :wrapAround="true"
                         :transition="500"
                         :breakpoints="breakpoints"
                     >
-                        <Slide
-                            v-for="(product, productIndex) in products"
-                            :key="product.id"
-                        >
-                            <img
-                                :src="`/storage/${product.image}`"
-                                class="w-100 d-block"
-                                @click="show(product)"
-                            />
-                        </Slide>
+                        <template #slides="{ currentSlide, slidesCount }">
+                            <Slide
+                                v-for="(product, productIndex) in products"
+                                :key="product.id"
+                            >
+                                <img
+                                    v-if="
+                                        isVisible(
+                                            productIndex,
+                                            currentSlide,
+                                            slidesCount
+                                        )
+                                    "
+                                    :src="`/storage/${product.image}`"
+                                    class="w-100 d-block"
+                                    @click="show(product)"
+                                />
+                            </Slide>
+                        </template>
 
                         <template #addons>
                             <Navigation>
