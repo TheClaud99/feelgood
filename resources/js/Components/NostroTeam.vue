@@ -143,47 +143,59 @@ function openModal(member) {
 @import "../node_modules/bootstrap/scss/mixins";
 
 #nostro_team {
-    .carousel__slide {
-        padding: 5px;
-    }
-
-    .carousel__viewport {
-        perspective: 2000px;
-    }
-    .carousel__pagination {
-        padding: 0 !important;
-        padding-inline-start: 0;
-    }
-
-    .carousel__track {
-        transform-style: preserve-3d;
-    }
-
-    .carousel__slide--sliding {
-        transition: 0.5s;
-    }
-
-    .carousel__prev,
-    .carousel__next {
-        margin: 0 !important;
-    }
-
-    .carousel__slide {
-        img {
-            max-width: 80%;
-            margin: 0 auto;
+    section.carousel {
+        .carousel__slide {
+            padding: 5px;
         }
 
-        transform: rotateY(0) scale(0.95);
-
-        p {
-            font-size: 30px;
+        .carousel__viewport {
+            perspective: 2000px;
         }
-    }
+        .carousel__pagination {
+            padding: 0 !important;
+            padding-inline-start: 0;
+        }
 
-    .carousel__slide--active {
-        opacity: 1;
-        transform: rotateY(0) scale(1);
+        .carousel__track {
+            transform-style: preserve-3d;
+        }
+
+        .carousel__slide--sliding {
+            transition: 0.5s;
+        }
+
+        .carousel__prev,
+        .carousel__next {
+            margin: 0 !important;
+        }
+
+        .carousel__slide {
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+
+            transform: rotateY(0) scale(0.95);
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .carousel__slide--active {
+            opacity: 1;
+            transform: rotateY(0) scale(1);
+        }
+
+        .carousel__pagination-button {
+            --vc-clr-primary: #3b2b1e;
+            --vc-clr-secondary: #fff;
+            --vc-pgn-width: 13px;
+            --vc-pgn-height: 13px;
+            --vc-pgn-background-color: var(--vc-clr-primary);
+            --vc-pgn-active-color: var(--vc-clr-secondary);
+            --vc-pgn-border-radius: 100%;
+        }
     }
 
     .main-container {

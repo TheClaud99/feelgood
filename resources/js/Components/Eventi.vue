@@ -139,5 +139,15 @@ const breakpoints = {
         opacity: 1;
         transform: rotateY(0) scale(1);
     }
+
+    .carousel__pagination-button {
+        --vc-clr-primary: #3b2b1e;
+        --vc-clr-secondary: #fff;
+        --vc-pgn-width: 13px;
+        --vc-pgn-height: 13px;
+        --vc-pgn-background-color: var(--vc-clr-primary);
+        --vc-pgn-active-color: var(--vc-clr-secondary);
+        --vc-pgn-border-radius: 100%;
+    }
 }
 </style>

@@ -216,5 +216,19 @@ function isVisible(productIndex, currentSlide, slidesCount) {
         opacity: 1;
         transform: rotateY(0) scale(1.1);
     }
+
+    .vel-modal {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .carousel__pagination-button {
+        --vc-clr-primary: #fff;
+        --vc-clr-secondary: #e95a2d;
+        --vc-pgn-width: 13px;
+        --vc-pgn-height: 13px;
+        --vc-pgn-background-color: var(--vc-clr-primary);
+        --vc-pgn-active-color: var(--vc-clr-secondary);
+        --vc-pgn-border-radius: 100%;
+    }
 }
 </style>
