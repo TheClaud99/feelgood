@@ -2,6 +2,13 @@
 import jo from "@/../images/staff/Jo.png";
 import laura from "@/../images/staff/Laura.png";
 import noi from "@/../images/staff/noi.png";
+import { Modal } from "bootstrap";
+import AboutUsModal from "./AboutUsModal.vue";
+
+function openModal() {
+    const modal = new Modal(document.getElementById("aboutUsModal"), {});
+    modal.show();
+}
 </script>
 
 <template>
@@ -23,7 +30,7 @@ import noi from "@/../images/staff/noi.png";
                             <img :src="jo" />
                             <p class="name">Jo</p>
                         </div> -->
-                        <div class="col-12 col-sm-6 col-md-5">
+                        <div class="col-12 col-sm-8 col-md-5">
                             <img :src="noi" />
                             <p class="name feelstrange-font">Jo e Laura</p>
                         </div>
@@ -55,6 +62,13 @@ import noi from "@/../images/staff/noi.png";
         </div>
 
         <div class="shadow position-absolute w-100 pe-none d-md-none" />
+        <button
+            @click="openModal"
+            class="btn btn-light position-absolute rounded-pill feelstrange-font ml-auto mr-auto d-block d-md-none"
+        >
+            LEGGI DI PIù
+        </button>
+        <AboutUsModal id="aboutUsModal" />
     </section>
 </template>
 
@@ -114,6 +128,17 @@ import noi from "@/../images/staff/noi.png";
         text-align: center;
         font-size: 34px;
     }
+}
+
+button {
+    bottom: 34px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 147px;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
 }
 
 .shadow {
