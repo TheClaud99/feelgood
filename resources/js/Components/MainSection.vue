@@ -20,7 +20,7 @@ defineProps({
         <div class="position-absolute postit-container">
             <div
                 :style="{ backgroundImage: `url(${postit})` }"
-                class="postit position-relative w-100 h-100 p-5"
+                class="postit position-relative w-100 h-100"
             >
                 <img :src="scotch1" class="position-absolute scotch-1" />
                 <img :src="scotch2" class="position-absolute scotch-2" />
@@ -38,21 +38,36 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
 .home {
     background-position-x: 36.5%;
 }
 
 .postit-container {
-    width: 285px;
-    height: 285px;
+    width: 18rem;
+    height: 18rem;
     right: 38px;
     bottom: 45px;
     z-index: 1;
+
+    @include media-breakpoint-up(xxl) {
+        width: 26rem;
+        height: 26rem;
+    }
 
     .postit {
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
+        padding: 3rem;
+
+        @include media-breakpoint-up(xxl) {
+            padding: 4rem;
+        }
+
         .postit-image {
             max-width: 100%;
             max-height: 100%;
@@ -61,20 +76,32 @@ defineProps({
         }
 
         .scotch {
-            width: 46px;
+            width: 2.8rem;
+
+            @include media-breakpoint-up(xxl) {
+                width: 4rem;
+            }
 
             &-1 {
                 @extend .scotch;
-                right: 34px;
+                right: 2.12rem;
                 z-index: 10;
-                top: 25px;
+                top: 1.2rem;
+
+                @include media-breakpoint-up(xxl) {
+                    right: 2.7rem;
+                }
             }
 
             &-2 {
                 @extend .scotch;
-                bottom: 24px;
+                bottom: 1.56rem;
                 z-index: 10;
-                left: 35px;
+                left: 2.12rem;
+
+                @include media-breakpoint-up(xxl) {
+                    left: 2.7rem;
+                }
             }
         }
     }
