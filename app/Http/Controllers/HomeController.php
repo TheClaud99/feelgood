@@ -21,7 +21,12 @@ class HomeController extends Controller
         $team_members = Member::active()->get();
         $products = Product::active()->get();
         $events = Event::active()->get();
-        $post = Post::active()->get()[0];
+        $post = Post::active()->get();
+        if(count($post) > 0) {
+            $post = $post[0];
+        } else {
+            $post = false;
+        }
         return Inertia::render('Homepage', [
             'members' => $team_members, 
             'products' => $products, 

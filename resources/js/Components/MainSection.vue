@@ -17,7 +17,7 @@ defineProps({
         :style="{ backgroundImage: `url(${menuImage})` }"
         class="page home"
     >
-        <div class="position-absolute postit-container">
+        <div v-if="post" class="position-absolute postit-container">
             <div class="position-relative">
                 <img :src="postit" class="w-100" />
                 <div class="position-absolute postit-text">
