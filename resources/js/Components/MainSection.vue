@@ -18,15 +18,30 @@ defineProps({
         class="page home"
     >
         <div class="position-absolute postit-container">
-            <div
-                :style="{ backgroundImage: `url(${postit})` }"
-                class="postit position-relative w-100 h-100"
-            >
-                <img :src="scotch1" class="position-absolute scotch-1" />
-                <img :src="scotch2" class="position-absolute scotch-2" />
-                <a target="_blank" :href="post.link">
-                    <img class="postit-image" :src="`/storage/${post.image}`" />
-                </a>
+            <div class="position-relative">
+                <img :src="postit" class="w-100" />
+                <div class="position-absolute postit-text">
+                    <div class="position-relative">
+                        <img
+                            :src="scotch1"
+                            class="position-absolute scotch-1"
+                        />
+                        <img
+                            :src="scotch2"
+                            class="position-absolute scotch-2"
+                        />
+                        <a
+                            class="w-100 h-100 d-block"
+                            target="_blank"
+                            :href="post.link"
+                        >
+                            <img
+                                class="postit-image w-100"
+                                :src="`/storage/${post.image}`"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <a
@@ -47,62 +62,48 @@ defineProps({
 }
 
 .postit-container {
-    width: 18rem;
-    height: 18rem;
+    width: 25%;
     right: 38px;
     bottom: 45px;
     z-index: 1;
 
-    @include media-breakpoint-up(xxl) {
-        width: 26rem;
-        height: 26rem;
+    // @include media-breakpoint-up(xxl) {
+    //     width: 26rem;
+    //     height: 26rem;
+    // }
+
+    .postit-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-3deg);
+        width: 63%;
     }
 
-    .postit {
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-        padding: 3rem;
+    .postit-image {
+        box-shadow: -2px 2px 3px 0px;
+    }
+
+    .scotch {
+        width: 2.8rem;
 
         @include media-breakpoint-up(xxl) {
-            padding: 4rem;
+            width: 4rem;
         }
 
-        .postit-image {
-            max-width: 100%;
-            max-height: 100%;
-            transform: rotate(-3deg);
-            box-shadow: -2px 2px 3px 0px;
+        &-1 {
+            @extend .scotch;
+            right: -11%;
+            z-index: 10;
+            top: -15%;
+            width: 31%;
         }
 
-        .scotch {
-            width: 2.8rem;
-
-            @include media-breakpoint-up(xxl) {
-                width: 4rem;
-            }
-
-            &-1 {
-                @extend .scotch;
-                right: 2.12rem;
-                z-index: 10;
-                top: 1.2rem;
-
-                @include media-breakpoint-up(xxl) {
-                    right: 2.7rem;
-                }
-            }
-
-            &-2 {
-                @extend .scotch;
-                bottom: 1.56rem;
-                z-index: 10;
-                left: 2.12rem;
-
-                @include media-breakpoint-up(xxl) {
-                    left: 2.7rem;
-                }
-            }
+        &-2 {
+            @extend .scotch;
+            bottom: -15%;
+            z-index: 10;
+            width: 31%;
+            left: -10%;
         }
     }
 }
