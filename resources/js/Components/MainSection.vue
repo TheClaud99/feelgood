@@ -62,15 +62,15 @@ defineProps({
 }
 
 .postit-container {
-    width: 25%;
+    width: 18rem;
     right: 38px;
     bottom: 45px;
     z-index: 1;
 
-    // @include media-breakpoint-up(xxl) {
-    //     width: 26rem;
-    //     height: 26rem;
-    // }
+    @media (min-width: 1600px) {
+        width: 26rem;
+        height: 26rem;
+    }
 
     .postit-text {
         top: 50%;
@@ -86,23 +86,19 @@ defineProps({
     .scotch {
         width: 2.8rem;
 
-        @include media-breakpoint-up(xxl) {
-            width: 4rem;
-        }
-
         &-1 {
             @extend .scotch;
             right: -11%;
             z-index: 10;
             top: -15%;
-            width: 31%;
+            width: 27%;
         }
 
         &-2 {
             @extend .scotch;
             bottom: -15%;
             z-index: 10;
-            width: 31%;
+            width: 27%;
             left: -10%;
         }
     }
