@@ -51,7 +51,7 @@ function openModal(member) {
                 </template>
             </div>
             <div class="d-sm-none flex-grow-1 align-content-center pt-sm-5 row">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <Carousel
                         :itemsToShow="1"
                         :wrapAround="true"
@@ -109,7 +109,7 @@ function openModal(member) {
                 <div
                     v-for="member in members.slice(0, 5)"
                     :key="member.id"
-                    class="col-xs-12 col-md-2 text-center"
+                    class="col-12 col-md-2 text-center"
                 >
                     <img :src="`/storage/${member.image}`" class="" />
                     <div>
@@ -121,7 +121,7 @@ function openModal(member) {
                 <div
                     v-for="member in members.slice(5)"
                     :key="member.id"
-                    class="col-xs-12 col-md-2 text-center"
+                    class="col-12 col-md-2 text-center"
                 >
                     <img :src="`/storage/${member.image}`" class="" />
                     <div>

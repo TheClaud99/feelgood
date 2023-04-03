@@ -97,7 +97,7 @@ function isVisible(productIndex, currentSlide, slidesCount) {
                 </div>
             </div>
             <div class="row pt-sm-5 flex-grow-1 align-items-center">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <VueEasyLightbox
                         :visible="lightBoxVisible"
                         :imgs="images"

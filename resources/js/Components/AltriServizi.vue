@@ -63,7 +63,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
             <div
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex overflow-hidden"
             >
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-12 col-md-3 text-center text-primary">
                     <p class="text-center feelstrange-font mb-0">Mercatino</p>
                     <p class="p-lg-3">
                         Nel nostro atrio si può trovare una zona dedicata alla
@@ -73,7 +73,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                         strumento che desidera.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-12 col-md-3 text-center text-primary">
                     <p class="text-center feelstrange-font mb-0">Grafica</p>
                     <p class="p-lg-3">
                         Jo oltre ad aver fatto per anni il Tatuatore,
@@ -85,7 +85,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
 
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-12 col-md-3 text-center text-primary">
                     <p class="text-center feelstrange-font mb-0">Eventi</p>
                     <p class="p-lg-3">
                         I nostri eventi non si fermano al Feel Good musica fest
@@ -95,7 +95,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                         palco all'esterno della struttura.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-3 text-center text-primary">
+                <div class="col-12 col-md-3 text-center text-primary">
                     <p class="text-center feelstrange-font mb-0">Liuteria</p>
                     <p class="p-lg-3">
                         All'interno disponiamo anche di un laboratorio di

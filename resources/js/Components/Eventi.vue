@@ -45,7 +45,7 @@ const breakpoints = {
                 </div>
             </div>
             <div class="row pt-sm-5 flex-grow-1 align-items-center">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <Carousel
                         :itemsToShow="2.95"
                         :wrapAround="true"

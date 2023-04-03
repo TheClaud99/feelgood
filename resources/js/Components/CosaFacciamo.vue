@@ -55,7 +55,7 @@ import altro from "@/../images/icons_rounded/altro.png";
             <div
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex"
             >
-                <div class="col-xs-12 col-md-3">
+                <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
                         Scuola di musica
                     </p>
@@ -67,7 +67,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                         la musica in modo sereno.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">Sala prove</p>
                     <p class="p-lg-3">
                         Le nostre sale sono state costruite con amore a mano dai
@@ -77,7 +77,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                         con la tua band o per esercitarti.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
                         Musica d'insieme
                     </p>
@@ -89,7 +89,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                         studio dello strumento ad un livello superiore.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
                         E molto altro...
                     </p>
