@@ -14,7 +14,7 @@ import { Head } from "@inertiajs/vue3";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ArrowUp from "@/Components/ArrowUp.vue";
 
-defineProps({ members: Array, products: Array, events: Array, post: Object });
+defineProps({ members: Array, products: Array, events: Array, posts: Array });
 </script>
 
 <template>
@@ -22,7 +22,7 @@ defineProps({ members: Array, products: Array, events: Array, post: Object });
 
     <MainLayout>
         <ApplicationLogo />
-        <MainSection :post="post" />
+        <MainSection :posts="posts" />
         <CosaFacciamo />
         <NostreSale />
         <NostraScuola />

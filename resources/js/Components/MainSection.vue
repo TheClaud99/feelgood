@@ -3,10 +3,21 @@ import menuImage from "@/../images/menu.png";
 import postit from "@/../images/postit.png";
 import scotch1 from "@/../images/scotch1.png";
 import scotch2 from "@/../images/scotch2.png";
+import { Carousel } from "bootstrap";
+import { onMounted } from "vue";
+
+onMounted(() => {
+    const myCarouselElement = document.querySelector("#postCarousel");
+    const carousel = new Carousel(myCarouselElement, {
+        ride: true,
+        cycle: true,
+        interval: 3000,
+    });
+});
 
 defineProps({
-    post: {
-        type: Object,
+    posts: {
+        type: Array,
         default: [],
     },
 });
@@ -17,11 +28,15 @@ defineProps({
         :style="{ backgroundImage: `url(${menuImage})` }"
         class="page home"
     >
-        <div v-if="post" class="position-absolute postit-container">
+        <div v-if="posts" class="position-absolute postit-container">
             <div class="position-relative">
                 <img :src="postit" class="w-100" />
                 <div class="position-absolute postit-text">
-                    <div class="position-relative">
+                    <div
+                        id="postCarousel"
+                        class="position-relative carousel slide"
+                        data-bs-ride="carousel"
+                    >
                         <img
                             :src="scotch1"
                             class="position-absolute scotch-1"
@@ -30,16 +45,27 @@ defineProps({
                             :src="scotch2"
                             class="position-absolute scotch-2"
                         />
-                        <a
-                            class="w-100 h-100 d-block"
-                            target="_blank"
-                            :href="post.link"
-                        >
-                            <img
-                                class="postit-image w-100"
-                                :src="`/storage/${post.image}`"
-                            />
-                        </a>
+                        <div class="carousel-inner">
+                            <div
+                                v-for="(post, postIndex) in posts"
+                                :key="post.id"
+                                :class="[
+                                    { active: postIndex == 0 },
+                                    'carousel-item',
+                                ]"
+                            >
+                                <a
+                                    class="w-100 h-100 d-block"
+                                    target="_blank"
+                                    :href="post.link"
+                                >
+                                    <img
+                                        class="postit-image w-100"
+                                        :src="`/storage/${post.image}`"
+                                    />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
