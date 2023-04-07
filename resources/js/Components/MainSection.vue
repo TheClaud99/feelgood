@@ -104,7 +104,7 @@ defineProps({
         width: 63%;
     }
 
-    .postit-image {
+    .carousel-inner {
         box-shadow: -2px 2px 3px 0px;
     }
 
