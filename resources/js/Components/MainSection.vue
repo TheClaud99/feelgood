@@ -9,8 +9,7 @@ import { onMounted } from "vue";
 onMounted(() => {
     const myCarouselElement = document.querySelector("#postCarousel");
     const carousel = new Carousel(myCarouselElement, {
-        ride: true,
-        cycle: true,
+        ride: "carousel",
         interval: 3000,
     });
 });
