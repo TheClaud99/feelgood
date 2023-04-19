@@ -39,12 +39,12 @@ const breakpoints = {
 <template>
     <section id="eventi" class="page position-relative bg-secondary">
         <div class="container text-white main-container">
-            <div class="row pb-3">
+            <div class="row">
                 <div class="col-12 text-center feelstrange-font section-title">
                     E20
                 </div>
             </div>
-            <div class="row pt-sm-5 flex-grow-1 align-items-center">
+            <div class="row flex-grow-1 align-items-center">
                 <div class="col-12">
                     <Carousel
                         :itemsToShow="2.95"
