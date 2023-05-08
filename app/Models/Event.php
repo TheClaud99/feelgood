@@ -85,6 +85,7 @@ class Event extends Model
     public function scopeActive($query): void
     {
         $query->where('active', true)
+            ->orderBy('sequence', 'DESC')
             ->orderBy('created_at', 'DESC');
     }
 
