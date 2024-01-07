@@ -101,14 +101,14 @@ class Event extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function setImageAttribute($value): void
-    {
-        $attribute_name = "image";
-        $disk = "public";
-        $destination_path = "uploads";
+    // public function setImageAttribute($value): void
+    // {
+    //     $attribute_name = "image";
+    //     $disk = "public";
+    //     $destination_path = "uploads";
 
-        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
+    //     $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
 
-        // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
-    }
+    //     // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
+    // }
 }

@@ -66,7 +66,7 @@ class EventCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
-        CRUD::field('image')->type('upload')->upload(true)->disk('public');
+        CRUD::field('image')->type('upload')->withFiles();;
         CRUD::field('link')->type('url');
         CRUD::field('date')->type('datetime');
         CRUD::field('active')->default(1);
