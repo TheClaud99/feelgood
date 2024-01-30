@@ -31,7 +31,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Sala prove
+                                Corsi extra
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
@@ -68,13 +68,13 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-12 col-md-3">
-                    <p class="text-center feelstrange-font mb-0">Sala prove</p>
+                    <p class="text-center feelstrange-font mb-0">Corsi extra</p>
                     <p class="p-lg-3">
-                        Le nostre sale sono state costruite con amore a mano dai
-                        titolari ed è proprio grazie a questo amore e la
-                        professionalità del ingegnere del suono che le sale
-                        prova possono regalare un'ottima acustica per suonare
-                        con la tua band o per esercitarti.
+                        I nostri corsi extra sono laboratorio vocale,
+                        ritmologia, teoria, armonia/composizione, e molto altro
+                        ancora. Cerchiamo sempre di evolverci per rendere
+                        l'apprendimento della musica il più divertente possibile
+                        per i nostri allievi.
                     </p>
                 </div>
                 <div class="col-12 col-md-3">
