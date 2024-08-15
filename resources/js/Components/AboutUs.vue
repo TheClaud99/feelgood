@@ -4,9 +4,14 @@ import laura from "@/../images/staff/Laura.png";
 import noi from "@/../images/staff/noi.png";
 import { Modal } from "bootstrap";
 import AboutUsModal from "./AboutUsModal.vue";
+import { onMounted } from "vue";
+
+let modal;
+onMounted(() => {
+    modal = new Modal(document.getElementById("aboutUsModal"), {});
+});
 
 function openModal() {
-    const modal = new Modal(document.getElementById("aboutUsModal"), {});
     modal.show();
 }
 </script>

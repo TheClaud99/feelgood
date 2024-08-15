@@ -3,7 +3,7 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import Curriculum from "./Curriculum.vue";
 import { Modal } from "bootstrap";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 defineProps({
     members: {
@@ -15,9 +15,13 @@ defineProps({
 // Membro di cui è al momento aperto il curriculum
 const currentMember = ref({});
 
+let modal;
+onMounted(() => {
+    modal = new Modal(document.getElementById("curriculumModal"), {});
+});
+
 function openModal(member) {
     currentMember.value = member;
-    const modal = new Modal(document.getElementById("curriculumModal"), {});
     modal.show();
 }
 </script>

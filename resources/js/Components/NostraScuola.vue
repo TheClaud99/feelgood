@@ -2,9 +2,14 @@
 import scuola3 from "@/../images/scuola 3.jpg";
 import { Modal } from "bootstrap";
 import NostraScuolaModal from "./NostraScuolaModal.vue";
+import { onMounted } from "vue";
+
+let modal;
+onMounted(() => {
+    modal = new Modal(document.getElementById("nostraScuolaModal"), {});
+});
 
 function openModal() {
-    const modal = new Modal(document.getElementById("nostraScuolaModal"), {});
     modal.show();
 }
 </script>
