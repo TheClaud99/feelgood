@@ -46,7 +46,7 @@ const showingNavigationDropdown = ref(false);
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#mercatino"> MERCATINO </a>
+                        <a class="nav-link" href="#mercatino"> SHOP </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#eventi"> EVENTI </a>

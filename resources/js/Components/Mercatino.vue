@@ -93,7 +93,7 @@ function isVisible(productIndex, currentSlide, slidesCount) {
         <div class="container text-white main-container">
             <div class="row pb-3">
                 <div class="col-12 text-center feelstrange-font section-title">
-                    MERCATINO
+                    SHOP
                 </div>
             </div>
             <div class="row pt-sm-5 flex-grow-1 align-items-center">

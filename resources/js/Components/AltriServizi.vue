@@ -2,7 +2,7 @@
 import jack1 from "@/../images/jack1.png";
 import jack2 from "@/../images/jack2.png";
 import grafico from "@/../images/icons_rounded/grafico.png";
-import mercatino from "@/../images/icons_rounded/mercatino.png";
+import shop from "@/../images/icons_rounded/shop.png";
 import liuteria from "@/../images/icons_rounded/liuteria.png";
 import eventi from "@/../images/icons_rounded/eventi.png";
 </script>
@@ -19,14 +19,11 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 <div class="col-12">
                     <div class="row">
                         <div class="col-6 col-md-3 text-center text-primary">
-                            <img
-                                :src="mercatino"
-                                class="cosa-facciamo-icon mixer"
-                            />
+                            <img :src="shop" class="cosa-facciamo-icon mixer" />
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Mercatino
+                                Shop
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
@@ -64,13 +61,12 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex overflow-hidden"
             >
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">Mercatino</p>
+                    <p class="text-center feelstrange-font mb-0">Shop</p>
                     <p class="p-lg-3">
-                        Nel nostro atrio si può trovare una zona dedicata alla
-                        vendita di strumenti usati, abbiamo voluto dare uno
-                        spazio fisico dove il possibile interessato possa
-                        trovare e provare, sotto la nostra supervisione, lo
-                        strumento che desidera.
+                        Nel nostro Shop potrai trovare: dai jeans vintage alle
+                        t-shirt FLGD prodotte direttamente da noi, dai
+                        braccialetti di “Si Fa Pe' Ride” ad oggettistica a tema
+                        musicale e non.
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
