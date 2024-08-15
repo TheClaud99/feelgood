@@ -41,7 +41,7 @@ class ProductCrudController extends CrudController
     {
         CRUD::column('name');
         CRUD::column('description');
-        CRUD::column('image');
+        CRUD::column('image')->type('upload')->upload(true)->disk('public');
         CRUD::column('price');
         CRUD::column('sequence');
         CRUD::column('active');
