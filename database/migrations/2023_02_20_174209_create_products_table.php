@@ -17,7 +17,7 @@ return new class extends Migration
             $table->longText('description')->nullable();
             $table->string('image')->nullable();
             $table->longText('photos')->nullable();
-            $table->float('price', 8, 2)->nullable();
+            $table->float('price')->nullable();
             $table->integer('sequence')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();
