@@ -41,7 +41,7 @@ class ProductCrudController extends CrudController
     {
         CRUD::column('name');
         CRUD::column('description');
-        CRUD::column('image')->type('upload')->upload(true)->disk('public');
+        CRUD::column('image')->type('upload')->disk('public');
         CRUD::column('price');
         CRUD::column('sequence');
         CRUD::column('active');
@@ -69,8 +69,12 @@ class ProductCrudController extends CrudController
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
         CRUD::field('price');
-        CRUD::field('image')->type('upload')->upload(true)->disk('public');
-        CRUD::field('photos')->type('upload_multiple')->upload(true)->disk('public');
+        CRUD::field('image')->type('upload')->disk('public')->withFiles([
+            'path' => 'uploads',
+        ]);
+        CRUD::field('photos')->type('upload_multiple')->disk('public')->withFiles([
+            'path' => 'uploads',
+        ]);
         CRUD::field('sequence')->type('number');
         CRUD::field('active')->default(1);
 
@@ -90,5 +94,16 @@ class ProductCrudController extends CrudController
     protected function setupUpdateOperation(): void
     {
         $this->setupCreateOperation();
+    }
+
+    protected function setupDeleteOperation()
+    {
+        $this->setupCreateOperation();
+    }
+
+    protected function setupShowOperation()
+    {
+        $this->setupListOperation();
+        CRUD::field('photos')->type('upload_multiple')->disk('public');
     }
 }

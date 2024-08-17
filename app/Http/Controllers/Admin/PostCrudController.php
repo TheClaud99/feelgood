@@ -42,7 +42,7 @@ class PostCrudController extends CrudController
     {
         CRUD::column('name');
         CRUD::column('active');
-        CRUD::column('image');
+        CRUD::column('image')->type('upload')->disk('public');
         CRUD::field('link');
         CRUD::column('sequence');
         CRUD::column('date');
@@ -65,7 +65,9 @@ class PostCrudController extends CrudController
         CRUD::setValidation(PostRequest::class);
 
         CRUD::field('name');
-        CRUD::field('image')->type('upload')->upload(true)->disk('public');
+        CRUD::field('image')->type('upload')->disk('public')->withFiles([
+            'path' => 'uploads',
+        ]);
         CRUD::field('link')->type('url');
         CRUD::field('active')->default(1);
         CRUD::field('date')->type('datetime')->default('now');
@@ -84,6 +86,11 @@ class PostCrudController extends CrudController
      * @return void
      */
     protected function setupUpdateOperation()
+    {
+        $this->setupCreateOperation();
+    }
+
+    protected function setupDeleteOperation()
     {
         $this->setupCreateOperation();
     }

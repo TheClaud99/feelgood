@@ -85,7 +85,7 @@ class Product extends Model
     public function scopeActive($query): void
     {
         $query->where('active', true)
-            ->orderBy('created_at', 'DESC');
+            ->orderBy('sequence', 'ASC');
     }
 
     /*
@@ -99,24 +99,4 @@ class Product extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-
-    public function setImageAttribute(String $value): void
-    {
-        $attribute_name = "image";
-        $disk = "public";
-        $destination_path = "uploads";
-
-        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
-
-        // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
-    }
-
-    public function setPhotosAttribute(String|array $value): void
-    {
-        $attribute_name = "photos";
-        $disk = "public";
-        $destination_path = "uploads";
-
-        $this->uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path);
-    }
 }

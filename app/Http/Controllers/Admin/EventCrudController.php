@@ -43,7 +43,7 @@ class EventCrudController extends CrudController
         CRUD::column('description');
         CRUD::column('date');
         CRUD::column('active');
-        CRUD::column('image');
+        CRUD::column('image')->type('upload')->disk('public');
         CRUD::field('link');
         CRUD::column('sequence');
 
@@ -66,7 +66,9 @@ class EventCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
-        CRUD::field('image')->type('upload')->withFiles();;
+        CRUD::field('image')->type('upload')->disk('public')->withFiles([
+            'path' => 'uploads',
+        ]);
         CRUD::field('link')->type('url');
         CRUD::field('date')->type('datetime');
         CRUD::field('active')->default(1);
@@ -86,6 +88,11 @@ class EventCrudController extends CrudController
      * @return void
      */
     protected function setupUpdateOperation(): void
+    {
+        $this->setupCreateOperation();
+    }
+
+    protected function setupDeleteOperation()
     {
         $this->setupCreateOperation();
     }

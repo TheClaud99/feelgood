@@ -43,7 +43,7 @@ class MemberCrudController extends CrudController
         CRUD::column('description');
         CRUD::column('instrument');
         CRUD::column('active');
-        CRUD::column('image');
+        CRUD::column('image')->type('upload')->disk('public');
         CRUD::column('sequence');
         CRUD::column('created_at');
         CRUD::column('updated_at');
@@ -69,7 +69,9 @@ class MemberCrudController extends CrudController
         CRUD::field('name');
         CRUD::field('description')->type('summernote');
         CRUD::field('instrument');
-        CRUD::field('image')->type('upload')->upload(true)->disk('public');
+        CRUD::field('image')->type('upload')->disk('public')->withFiles([
+            'path' => 'uploads',
+        ]);
         CRUD::field('sequence')->type('number');
         CRUD::field('active')->default(1);
 
@@ -87,6 +89,11 @@ class MemberCrudController extends CrudController
      * @return void
      */
     protected function setupUpdateOperation(): void
+    {
+        $this->setupCreateOperation();
+    }
+
+    protected function setupDeleteOperation()
     {
         $this->setupCreateOperation();
     }
