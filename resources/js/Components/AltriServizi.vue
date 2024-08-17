@@ -65,8 +65,9 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     <p class="p-lg-3">
                         Nel nostro Shop potrai trovare: dai jeans vintage alle
                         t-shirt FLGD prodotte direttamente da noi, dai
-                        braccialetti di “Si Fa Pe' Ride” ad oggettistica a tema
-                        musicale e non.
+                        braccialetti di “Si Fa Pe' Ride” che affiancano perline
+                        colorate a parole dialettali irriverenti ad oggettistica
+                        a tema musicale e non.
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
