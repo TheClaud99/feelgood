@@ -174,12 +174,12 @@ function openModal(member) {
         }
 
         .carousel__slide {
+            transform: rotateY(0) scale(0.95);
+
             img {
                 max-width: 80%;
                 margin: 0 auto;
             }
-
-            transform: rotateY(0) scale(0.95);
 
             p {
                 font-size: 30px;
