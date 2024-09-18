@@ -155,16 +155,20 @@ a[href="#contact_us"] {
 
 /* New button */
 a#whatsapp_link {
-    bottom: 52px;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    // bottom: 10px;
-    // left: calc(
-    //     50% + 80px
-    // ); /* Adjust 80px as needed to position the new button */
-    // right: auto;
+    bottom: 10px;
+    left: calc(
+        50% + 80px
+    ); /* Adjust 80px as needed to position the new button */
+    right: auto;
+
+    @include media-breakpoint-up(sm) {
+        bottom: 52px;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     width: 54px;
     height: 54px;
     border-radius: 50%;
