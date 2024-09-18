@@ -23,7 +23,7 @@ import GoogleMapLoader from "./GoogleMapLoader.vue";
                             <img :src="postit" class="w-100" />
                             <div class="position-absolute postit-text">
                                 <div class="pe-5 ps-5 text-center">
-                                    <div class="pt-5">Tel. +39 3921231231</div>
+                                    <div class="pt-5">Tel. +39 3791231231</div>
                                     <div>
                                         Via Monte Tambura 19, Viareggio (LU)
                                     </div>
