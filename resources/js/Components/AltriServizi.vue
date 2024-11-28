@@ -3,7 +3,7 @@ import jack1 from "@/../images/jack1.png";
 import jack2 from "@/../images/jack2.png";
 import grafico from "@/../images/icons_rounded/grafico.png";
 import shop from "@/../images/icons_rounded/shop.png";
-import liuteria from "@/../images/icons_rounded/liuteria.png";
+import news from "@/../images/icons_rounded/news.png";
 import eventi from "@/../images/icons_rounded/eventi.png";
 </script>
 
@@ -45,13 +45,13 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
                             <img
-                                :src="liuteria"
+                                :src="news"
                                 class="cosa-facciamo-icon musica-insieme"
                             />
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Liuteria
+                                Feel Good Post
                             </p>
                         </div>
                     </div>
@@ -86,19 +86,20 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     <p class="text-center feelstrange-font mb-0">Eventi</p>
                     <p class="p-lg-3">
                         I nostri eventi non si fermano al Feel Good musica fest
-                        di Maggio/GIugno ma nell'arco dell'anno organizziamo Jam
+                        di Maggio/Giugno ma nell'arco dell'anno organizziamo Jam
                         session nelle quali coinvolgiamo anche i nostri allievi.
-                        Durante l'estate organizziamo aperitivi in musica sul
-                        palco all'esterno della struttura.
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">Liuteria</p>
+                    <p class="text-center feelstrange-font mb-0">
+                        Feel Good Post
+                    </p>
                     <p class="p-lg-3">
-                        All'interno disponiamo anche di un laboratorio di
-                        liuteria dove è possibile riparare chitarre o bassi
-                        Facciamo assistenza ai nostri allievi ed insegnanti e
-                        chiunque ne abbia bisogno.
+                        The Feel Good Post è il nostro giornale autoprodotto,
+                        scritto da noi e da due dei nostri allievi. Parleremo di
+                        musica a tutto tondo, dalla cronaca rosa alle news del
+                        momento, dall'oroscopo ai quiz e qualche curiosità sulla
+                        scuola.
                     </p>
                 </div>
             </div>
