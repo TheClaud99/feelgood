@@ -37,7 +37,7 @@ function openModal() {
                         </div> -->
                         <div class="col-12 col-sm-8 col-md-5">
                             <img :src="noi" />
-                            <p class="name feelstrange-font mb-0">Jo e Laura</p>
+                            <p class="name feelstrange-font mb-0">JO E LAURA</p>
                         </div>
                         <div class="col-12 col-sm-12 col-md-8">
                             <p class="text-justify">

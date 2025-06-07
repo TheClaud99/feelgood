@@ -31,7 +31,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Grafica
+                                GRAFICA
                             </p>
                         </div>
 
@@ -40,7 +40,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Eventi
+                                EVENTI
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
@@ -51,7 +51,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Feel Good Post
+                                FEEL GOOD POST
                             </p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 class="row pt-3 text-center flex-grow-1 text-primary d-none d-md-flex overflow-hidden"
             >
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">Shop</p>
+                    <p class="text-center feelstrange-font mb-0">SHOP</p>
                     <p class="p-lg-3">
                         Nel nostro Shop potrai trovare: dai jeans vintage alle
                         t-shirt FLGD prodotte direttamente da noi, dai
@@ -71,7 +71,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">Grafica</p>
+                    <p class="text-center feelstrange-font mb-0">GRAFICA</p>
                     <p class="p-lg-3">
                         Jo oltre ad aver fatto per anni il Tatuatore,
                         appassionato di illustrazione, fotografia, street art,
@@ -83,7 +83,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 </div>
 
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">Eventi</p>
+                    <p class="text-center feelstrange-font mb-0">EVENTI</p>
                     <p class="p-lg-3">
                         I nostri eventi non si fermano al Feel Good musica fest
                         di Maggio/Giugno ma nell'arco dell'anno organizziamo Jam
@@ -92,7 +92,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
                     <p class="text-center feelstrange-font mb-0">
-                        Feel Good Post
+                        FEEL GOOD POST
                     </p>
                     <p class="p-lg-3">
                         The Feel Good Post è il nostro giornale autoprodotto,

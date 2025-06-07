@@ -23,7 +23,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Scuola di musica
+                                SCUOLA DI MUSICA
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
@@ -31,7 +31,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                Corsi extra
+                                CORSI EXTRA
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
@@ -40,13 +40,13 @@ import altro from "@/../images/icons_rounded/altro.png";
                                 class="cosa-facciamo-icon musica-insieme"
                             />
                             <p class="text-center feelstrange-font d-md-none">
-                                Musica d'insieme
+                                MUSICA D'INSIEME
                             </p>
                         </div>
                         <div class="col-6 col-md-3 text-center text-primary">
                             <img :src="altro" class="cosa-facciamo-icon" />
                             <p class="text-center feelstrange-font d-md-none">
-                                E molto altro...
+                                E MOLTO ALTRO...
                             </p>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ import altro from "@/../images/icons_rounded/altro.png";
             >
                 <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
-                        Scuola di musica
+                        SCUOLA DI MUSICA
                     </p>
                     <p class="p-lg-3">
                         I nostri corsi di musica si cuciono addosso all'allievo
@@ -68,7 +68,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                     </p>
                 </div>
                 <div class="col-12 col-md-3">
-                    <p class="text-center feelstrange-font mb-0">Corsi extra</p>
+                    <p class="text-center feelstrange-font mb-0">CORSI EXTRA</p>
                     <p class="p-lg-3">
                         I nostri corsi extra sono laboratorio vocale,
                         ritmologia, teoria, armonia/composizione, e molto altro
@@ -79,7 +79,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                 </div>
                 <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
-                        Musica d'insieme
+                        MUSICA D'INSIEME
                     </p>
                     <p class="p-lg-3">
                         La nostra musica d'insieme non solo ti da la possibilità
@@ -91,7 +91,7 @@ import altro from "@/../images/icons_rounded/altro.png";
                 </div>
                 <div class="col-12 col-md-3">
                     <p class="text-center feelstrange-font mb-0">
-                        E molto altro...
+                        E MOLTO ALTRO...
                     </p>
                     <p class="p-lg-3">
                         Ci siamo sempre prefissati l'obbiettivo di non fermarci
