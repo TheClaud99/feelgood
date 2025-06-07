@@ -26,6 +26,8 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             scss: {
+                api: "modern",
+                // https://github.com/twbs/bootstrap/issues/40962#issuecomment-2448214806
                 silenceDeprecations: [
                     "mixed-decls",
                     "color-functions",

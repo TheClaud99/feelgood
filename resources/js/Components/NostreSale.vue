@@ -61,9 +61,9 @@ import sala4 from "@/../images/sala4.jpg";
 </template>
 
 <style scoped lang="scss">
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 p {
     text-align: justify;
