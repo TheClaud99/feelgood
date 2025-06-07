@@ -1,11 +1,5 @@
 <script setup>
 import "bootstrap";
-import isEqual from "lodash.isequal";
-// defineProps({
-//     member: {
-//         type: Object,
-//     },
-// });
 </script>
 
 <template>

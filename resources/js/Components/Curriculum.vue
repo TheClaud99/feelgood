@@ -1,6 +1,7 @@
 <script setup>
 import "bootstrap";
-import isEqual from "lodash.isequal";
+import { isDeepEqual } from "../isDeepEqual";
+
 defineProps({
     member: {
         type: Object,
@@ -17,7 +18,10 @@ defineProps({
         role="dialog"
     >
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" v-if="member && !isEqual(member, {})">
+            <div
+                class="modal-content"
+                v-if="member && !isDeepEqual(member, {})"
+            >
                 <div class="modal-header">
                     <h5 class="modal-title">{{ member.name }}</h5>
                     <button
