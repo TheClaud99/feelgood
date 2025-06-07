@@ -24,8 +24,9 @@ $headings-font-weight: 800;
     font-family: "FeelStrange";
     font-style: normal;
     font-weight: normal;
-    src: local("FeelStrange"),
-        url(@/../styles/fonts/FeelStrange.otf) format("opentype");
+    // src: local("FeelStrange"),
+    //     url(@/../styles/fonts/FeelStrange.otf) format("opentype");
+    src: local("Feel25"), url(@/../styles/fonts/Feel25.otf) format("opentype");
 }
 
 @font-face {
