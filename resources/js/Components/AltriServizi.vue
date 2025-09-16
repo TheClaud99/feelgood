@@ -51,7 +51,7 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                             <p
                                 class="text-center feelstrange-font pb-5 d-md-none"
                             >
-                                FEEL GOOD POST
+                                BANDI
                             </p>
                         </div>
                     </div>
@@ -91,15 +91,12 @@ import eventi from "@/../images/icons_rounded/eventi.png";
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-primary">
-                    <p class="text-center feelstrange-font mb-0">
-                        FEEL GOOD POST
-                    </p>
+                    <p class="text-center feelstrange-font mb-0">BANDI</p>
                     <p class="p-lg-3">
-                        The Feel Good Post è il nostro giornale autoprodotto,
-                        scritto da noi e da due dei nostri allievi. Parleremo di
-                        musica a tutto tondo, dalla cronaca rosa alle news del
-                        momento, dall'oroscopo ai quiz e qualche curiosità sulla
-                        scuola.
+                        Le nostre borse di studio, dirette perlopiù a ragazzi/e
+                        tra i 14 e i 18 anni, con le quali hanno la possibilità
+                        di autofinanziarsi le lezioni ed imparare basi di
+                        grafica, tipografia e marketing.
                     </p>
                 </div>
             </div>
